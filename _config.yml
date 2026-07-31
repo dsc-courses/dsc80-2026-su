@@ -15,28 +15,47 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: DSC 80
-description: DSC 80, Winter 2026 at UC San Diego
+description: DSC 80, Summer 2026 at UC San Diego
 tagline: Practice and Application of Data Science
-baseurl: '/dsc80-2026-wi' 
+baseurl: '/dsc80-2026-su' 
 url: 'https://dsc-courses.github.io' 
 author: DSC 80 course staff
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
+
+# reference these in the site using site.urls, e.g.:
+#
+# Check out our [Campuswire discussion forum]({{ site.urls.campuswire }}) for
+# questions and announcements.
+urls:
+  campuswirejoin: &campuswirejoin 'https://campuswire.com/p/G65427605'
+  campuswire: &campuswire 'https://campuswire.com/c/G65427605' 
+  gradescope: &gradescope 'https://www.gradescope.com/courses/1288255'
+  reference: &reference 'https://dsc-courses.github.io/bpd-reference/docs/documentation/intro'
+  practice: &practice 'https://practice.dsc10.com/'
+  cc: &cc 'http://cc.dsc10.com/'
+  podcasts: &podcasts 'https://podcast.ucsd.edu/'
+  syllabuscheck: &syllabuscheck 'https://docs.google.com/forms/d/e/1FAIpQLScOVK4Q8Xe9T0xQ4RQBB2ZAkySvnWHDCQK_k_33nhw0zDvkSQ/viewform?usp=dialog'
+  welcome: &welcome 'https://forms.gle/HE1a1V7rvu5BCuSZ7'
+  github: &github 'https://github.com/dsc-courses/dsc10-2026-sp'
+  pretest: &pretest 'https://practice.dsc10.com/pretest/'
+  classroom: &classroom 'https://map.concept3d.com/?id=1005#!m/761769?share'
+
 # Theme settings
-remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3
+remote_theme: just-the-docs/just-the-docs@v0.12.0
 color_scheme: bluecsd
 search_enabled: true
 heading_anchors: true
 permalink: pretty
 aux_links:
   💻 GitHub:
-    - 'https://github.com/dsc-courses/dsc80-2026-wi'
+    - *github
   🙋 Campuswire:
-    - 'https://campuswire.com/c/GFDCC5DB7/feed'
+    - *campuswire
   💯 Gradescope:
-    - 'https://www.gradescope.com/courses/1209672'
+    - *gradescope
   💪 Practice:
-    - 'https://practice.dsc80.com/'
+    - *practice
 footer_content:
 
 # Collections for website data
