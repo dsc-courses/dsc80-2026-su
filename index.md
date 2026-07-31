@@ -14,22 +14,12 @@ nav_order: 1
 
 {{ site.staffersnobio }}
 
-[syllabus]: https://dsc80.com/syllabus 
-[campuswire]: https://campuswire.com/c/GFDCC5DB7
-[gradescope]: https://www.gradescope.com/courses/1209672
-[github]: https://github.com/dsc-courses/dsc80-2026-fa
-[welcome-survey]: https://forms.gle/byE5q4b1iKsBzEwN7
+{: .warning }
+This site is **under construction**. Anything you read here is not finalized. This disclaimer will be removed when the site is ready for Summer 2026.
 
 [Jump to the current week](#{{ site.modules.first.title | slugify }}){: .btn data-current-week-link="" }
-[Podcasts](https://podcast.ucsd.edu/){: .btn }
 [Welcome Survey][welcome-survey]{: .btn }
 
-
-<!--{: .success }
-
-**The midterm exam is on Tuesday, February 10th during lecture. See [Campuswire](https://campuswire.com/c/GFDCC5DB7/feed/102) for more details**
-
-**Welcome to DSC 80! 👋 Make sure to read the [syllabus][syllabus], check that you can access [Gradescope][gradescope] and [Campuswire][campuswire], and fill out the [Welcome Survey][welcome-survey].** -->
 
 {% for module in site.modules %}
 {{ module }}
