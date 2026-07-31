@@ -18,7 +18,7 @@ nav_order: 1
 This site is **under construction**. Anything you read here is not finalized. This disclaimer will be removed when the site is ready for Summer 2026.
 
 [Jump to the current week](#{{ site.modules.first.title | slugify }}){: .btn data-current-week-link="" }
-[Welcome Survey][{{ site.urls.welcome }}]{: .btn }
+[Welcome Survey]({{ site.urls.welcome }}){: .btn }
 
 
 {% for module in site.modules %}
