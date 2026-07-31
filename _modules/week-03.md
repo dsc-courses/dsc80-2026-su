@@ -1,40 +1,49 @@
 ---
-title: "Week 3 \u2013 Messy Data, Statistical Testing"
+title: "Week 3 \u2013 HTTP and HTML / Midterm, Regular Expressions"
 weekNumber: 3
 days:
-- date: '2026-01-19'
+- date: '2026-08-17'
   events:
-  - name: LAB 2
+  - name: LEC 9
+    type: lecture
+    title: HTTP Basics
+    reading: '[Ch. 14.2-14.4](https://learningds.org/ch/14/web_json.html)'
+  - name: LAB 5
     type: lab
-    title: DataFrames and Grouping
-    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/labs/lab02/lab.ipynb
+    title: Missing Values and Imputation
     reading: ''
-- date: '2026-01-20'
+- date: '2026-08-18'
   events:
-  - name: LEC 5
+  - name: LEC 10
     type: lecture
-    title: Exploring and Cleaning Data
-    reading: '[Ch. 9](https://learningds.org/ch/09/wrangling_intro.html) and [10](https://learningds.org/ch/10/eda_intro.html)'
-    html: resources/lectures/lec05/lec05.html
-- date: '2026-01-21'
+    title: Web Scraping
+    reading: '[Ch. 14.2-14.4](https://learningds.org/ch/14/web_json.html)'
+- date: '2026-08-19'
   events:
-  - name: DISC 3
-    type: disc
-    title: Lab 2 Reflection
-    reading: ''
-- date: '2026-01-22'
-  events:
-  - name: LEC 6
+  - name: LEC 11
     type: lecture
-    title: Hypothesis and Permutation Testing
-    reading: '[Ch. 17](https://learningds.org/ch/17/inf_pred_gen_intro.html)'
-    html: resources/lectures/lec06/lec06.html
-    review: resources/lectures/lec06/review.html
-- date: '2026-01-23'
-  events:
-  - name: PROJ 1
-    type: proj
-    title: Gradebook 💯
-    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/projects/proj01/project.ipynb
+    title: Midterm Review
     reading: ''
+  - name: EXAM
+    type: exam
+    title: Midterm Exam
+    reading: ''
+- date: '2026-08-20'
+  events:
+  - name: LEC 12
+    type: lecture
+    title: Regular Expressions
+    reading: '[Ch. 13](https://learningds.org/ch/13/text_intro.html)'
+- date: '2026-08-21'
+  events:
+  - name: LAB 6
+    type: lab
+    title: APIs and Web Scraping
+    reading: ''
+- date: '2026-08-22'
+  events:
+  - name: LAB 7
+    type: lab
+    title: Regular Expressions
+    reading: '[Ch. 13](https://learningds.org/ch/13/text_intro.html)'
 ---

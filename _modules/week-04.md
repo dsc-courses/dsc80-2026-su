@@ -1,40 +1,54 @@
 ---
-title: "Week 4 \u2013 Missing Values"
+title: "Week 4 \u2013 Text and Modeling / Feature Engineering"
 weekNumber: 4
 days:
-- date: '2026-01-26'
+- date: '2026-08-24'
   events:
-  - name: LAB 3
-    type: lab
-    title: Merging and Pivoting
-    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/labs/lab03/lab.ipynb
+  - name: PROJ 3
+    type: proj
+    title: Project 3 Checkpoint
     reading: ''
-- date: '2026-01-27'
-  events:
-  - name: LEC 7
+  - name: LEC 13
     type: lecture
-    title: Missingness Mechanisms
-    reading: '[A1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4121561/), [A2](https://stefvanbuuren.name/fimd/sec-MCAR.html)'
-    html: resources/lectures/lec07/lec07.html
-    extra: resources/lectures/lec07/lec07-fast-permutation-tests.html
-- date: '2026-01-28'
+    title: Text Features
+    reading: '[Ch. 13.4](https://learningds.org/ch/13/text_sotu.html)'
+- date: '2026-08-25'
   events:
+  - name: LEC 14
+    type: lecture
+    title: Linear Regression
+    reading: '[Ch. 15.0-15.6](https://learningds.org/ch/15/linear_intro.html)'
+- date: '2026-08-26'
+  events:
+  - name: PROJ 3
+    type: proj
+    title: Project 3
+    reading: ''
   - name: DISC 4
     type: disc
-    title: Lab 3 Reflection
+    title: Lab 4 Reflection; Midterm Exam Solutions Review; Lab 6 Reflection; Lab
+      7 Reflection
     reading: ''
-- date: '2026-01-29'
-  events:
-  - name: LEC 8
+  - name: LEC 15
     type: lecture
-    title: Imputation
-    reading: '[DSP 6.3-6.5](https://notes.dsc80.com/content/06/handling-missing-data.html)'
-    html: resources/lectures/lec08/lec08.html
-- date: '2026-01-30'
+    title: Feature Engineering
+    reading: '[Ch. 15.7-15.9](https://learningds.org/ch/15/linear_feature_eng.html)'
+- date: '2026-08-27'
   events:
-  - name: PROJ 2
+  - name: LEC 16
+    type: lecture
+    title: Standardization, Multicollinearity, and Generalization
+    reading: '[Ch. 16](https://learningds.org/ch/16/ms_train_test.html), [17.6](https://learningds.org/ch/17/inf_pred_gen_prob.html)'
+- date: '2026-08-28'
+  events:
+  - name: PROJ 4
     type: proj
-    title: Checkpoint - Loans 💸
-    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/projects/proj02/project.ipynb
+    title: Project 4 Checkpoint 1
     reading: ''
+- date: '2026-08-29'
+  events:
+  - name: LAB 8
+    type: lab
+    title: Feature Engineering
+    reading: '[Ch. 15.7-15.9](https://learningds.org/ch/15/linear_feature_eng.html)'
 ---

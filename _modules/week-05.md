@@ -1,39 +1,53 @@
 ---
-title: "Week 5 \u2013 HTTP and HTML"
+title: "Week 5 \u2013 Modeling in Practice / Evaluating Classifiers / Final Exam"
 weekNumber: 5
 days:
-- date: '2026-02-02'
+- date: '2026-08-31'
   events:
-  - name: LAB 4
+  - name: LAB 9
     type: lab
-    title: Hypothesis and Permutation Testing
-    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/labs/lab04/lab.ipynb
-    reading: '[Ch. 17](https://learningds.org/ch/17/inf_pred_gen_intro.html)'
-- date: '2026-02-03'
-  events:
-  - name: LEC 9
+    title: Models and Pipelines
+    reading: ''
+  - name: LEC 17
     type: lecture
-    title: HTTP and HTML
-    reading: '[Ch. 14.2-14.4](https://learningds.org/ch/14/web_json.html)'
-    html: resources/lectures/lec09/lec09.html
-- date: '2026-02-04'
+    title: Hyperparameters, Cross-Validation, and Decision Trees
+    reading: '[Ch. 16](https://learningds.org/ch/16/ms_intro.html)'
+- date: '2026-09-01'
   events:
+  - name: LEC 18
+    type: lecture
+    title: Decision Trees and Random Forests
+    reading: '[A1](resources/other/15097-decision-trees.pdf)'
+- date: '2026-09-02'
+  events:
+  - name: PROJ 4
+    type: proj
+    title: Project 4 Checkpoint 2
+    reading: ''
+  - name: LEC 19
+    type: lecture
+    title: Classifier Evaluation and Model Fairness
+    reading: '[Ch. 16](https://learningds.org/ch/16/ms_intro.html)'
   - name: DISC 5
     type: disc
-    title: Lab 4 Reflection
+    title: Lab 8 Reflection; Lab 9 Reflection
     reading: ''
-- date: '2026-02-05'
+- date: '2026-09-03'
   events:
-  - name: LEC 10
+  - name: LEC 20
     type: lecture
-    title: Web Scraping
-    reading: '[Ch. 14.2-14.4](https://learningds.org/ch/14/web_json.html)'
-    html: resources/lectures/lec10/lec10.html
-- date: '2026-02-06'
+    title: Review, Conclusion
+    reading: '[Ch. 19.5](https://learningds.org/ch/19/class_dr.html)'
+- date: '2026-09-04'
   events:
-  - name: PROJ 2
+  - name: EXAM
+    type: exam
+    title: Final Exam
+    reading: ''
+- date: '2026-09-05'
+  events:
+  - name: PROJ 4
     type: proj
-    title: Loans 💸
-    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/projects/proj02/project.ipynb
+    title: Project 4
     reading: ''
 ---

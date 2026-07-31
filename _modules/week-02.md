@@ -1,39 +1,53 @@
 ---
-title: "Week 2 \u2013 DataFrames"
+title: "Week 2 \u2013 Messy Data, Statistical Testing / Missing Values"
 weekNumber: 2
 days:
-- date: '2026-01-12'
+- date: '2026-08-10'
   events:
-  - name: LAB 1
-    type: lab
-    title: Python, NumPy, and Pandas
-    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/labs/lab01/lab.ipynb
-    reading: ''
-- date: '2026-01-13'
-  events:
-  - name: LEC 3
+  - name: LEC 5
     type: lecture
-    title: Aggregating
-    reading: '[Ch. 6.2](https://learningds.org/ch/06/pandas_aggregating.html)'
-    html: resources/lectures/lec03/lec03.html
-- date: '2026-01-14'
+    title: Exploring and Cleaning Data
+    reading: '[Ch. 9](https://learningds.org/ch/09/wrangling_intro.html) and [10](https://learningds.org/ch/10/eda_intro.html)'
+  - name: LAB 3
+    type: lab
+    title: Merging and Pivoting
+    reading: ''
+- date: '2026-08-11'
+  events:
+  - name: LEC 6
+    type: lecture
+    title: Hypothesis and Permutation Testing
+    reading: '[Ch. 17](https://learningds.org/ch/17/inf_pred_gen_intro.html)'
+- date: '2026-08-12'
   events:
   - name: DISC 2
     type: disc
-    title: Lab 1 Reflection
+    title: Lab 2 Reflection; Lab 3 Reflection
     reading: ''
-- date: '2026-01-15'
-  events:
-  - name: LEC 4
-    type: lecture
-    title: Simpson's Paradox, Joining, Transforming
-    reading: '[Ch. 6.3-6.5](https://learningds.org/ch/06/pandas_joining.html)'
-    html: resources/lectures/lec04/lec04.html
-- date: '2026-01-17'
-  events:
-  - name: PROJ 1
+  - name: PROJ 2
     type: proj
-    title: Checkpoint - Gradebook 💯
-    url: https://github.com/dsc-courses/dsc80-2026-wi/blob/main/projects/proj01/project.ipynb
+    title: Project 2 Checkpoint
+    reading: ''
+  - name: LEC 7
+    type: lecture
+    title: Missingness Mechanisms
+    reading: '[A1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4121561/), [A2](https://stefvanbuuren.name/fimd/sec-MCAR.html)'
+- date: '2026-08-13'
+  events:
+  - name: LEC 8
+    type: lecture
+    title: Imputation
+    reading: '[DSP 6.3-6.5](https://notes.dsc80.com/content/06/handling-missing-data.html)'
+- date: '2026-08-14'
+  events:
+  - name: LAB 4
+    type: lab
+    title: Hypothesis and Permutation Testing
+    reading: '[Ch. 17](https://learningds.org/ch/17/inf_pred_gen_intro.html)'
+- date: '2026-08-15'
+  events:
+  - name: PROJ 2
+    type: proj
+    title: Project 2
     reading: ''
 ---

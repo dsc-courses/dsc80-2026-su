@@ -20,7 +20,7 @@ tagline: Practice and Application of Data Science
 baseurl: '/dsc80-2026-su' 
 url: 'https://dsc-courses.github.io' 
 author: DSC 80 course staff
-exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor", ".bundle", "scripts"]
 
 
 # reference these in the site using site.urls, e.g.:
