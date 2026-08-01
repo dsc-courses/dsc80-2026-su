@@ -71,17 +71,18 @@ The way to do this depends on whether you're on a Unix-like platform (macOS or L
     ```
 
 **Windows**:
-
 1. Download the Windows install script from [here](https://github.com/conda-forge/miniforge?tab=readme-ov-file#windows). The file should be named `Miniforge3-Windows-x86_64.exe`.
 2. Run the downloaded `.exe` file. Follow the prompts, taking note of the options to "Create start menu shortcut" and "Add Miniforge3 to my PATH environment variable". The latter is not selected by default, but you will want to select it. This allows you to easily run `mamba` commands from from terminals other than the just-installed Miniforge Prompt.
 3. From the Start Menu, open the Miniforge Prompt and run:
     ```
-    conda init
+    mamba init
     ```
+4. **Close and reopen your terminal.** This step is important — the changes made by `mamba init` won't take effect in the terminal window you ran it in.
 
-### Step 2: Download [`environment.yml`](https://github.com/dsc-courses/dsc80-2026-wi/blob/gh-pages/resources/environment.yml)
 
-[This file](https://github.com/dsc-courses/dsc80-2026-wi/blob/gh-pages/resources/environment.yml) contains the necessary details to configure your environment. If you take a look at it, you'll see that it contains a specific Python version (`python=3.12`) along with specific package versions (like `pandas==2.2.3` and `requests==2.32.3`, for example).
+### Step 2: Download [`environment.yml`]({{site.urls.environment}})
+
+[This file]({{site.urls.environment}}) contains the necessary details to configure your environment. If you take a look at it, you'll see that it contains a specific Python version (`python=3.12`) along with specific package versions (like `pandas==2.2.3` and `requests==2.32.3`, for example).
 
 ### Step 3: Create a new `conda` environment
 
@@ -132,7 +133,7 @@ To open a Jupyter Notebook, use the `jupyter notebook` command in your terminal.
 ### Using Git
 
 All of our course materials, including your assignments, are hosted on
-GitHub in [this Git repository](https://github.com/dsc-courses/dsc80-2026-wi). This means that you'll need to download and use
+GitHub in [this Git repository]({{ site.urls.github }}). This means that you'll need to download and use
 [Git](https://git-scm.com/) in order to work with the course
 materials.
 
@@ -147,7 +148,7 @@ There are many graphical user interfaces (GUIs) for working with Git, which you 
 use the command-line version of Git. To get started, you\'ll need to
 \"clone\" the course repository. Navigate to the directory where you want to place your DSC 80 course materials, and run:
 
-    git clone https://github.com/dsc-courses/dsc80-2026-wi
+    git clone https://github.com/dsc-courses/dsc80-2026-su
 
 This will copy the repository to the current directory on your computer. You should only need to do this once.
 
@@ -162,7 +163,7 @@ to lose work (although it\'s still possible!).
 
 **Merge Conflicts**
 
-You might face issues when using `git pull` regarding merge issues and branches. This is caused by files being updated on your side while we are also changing the [Git repository](https://github.com/dsc-courses/dsc80-2026-wi) by pushing new assignments on our side. Here are some steps you can follow to resolve them:
+You might face issues when using `git pull` regarding merge issues and branches. This is caused by files being updated on your side while we are also changing the [Git repository]({{site.urls.github}}) by pushing new assignments on our side. Here are some steps you can follow to resolve them:
 
 NOTE: If you're new to working with GitHub pulls, merges, etc., it's a good idea to **save a copy of your important work locally** just in case you accidentally overwrite your files. 
 
