@@ -101,7 +101,7 @@ post instead.**
 
 ### Lectures
 
-Lectures will be held remotely on Zoom, Monday through Thursday 9:30-10:50AM. In-person attendance can earn you some credit for the Engagement portion of your grade (see below).
+Lectures will be held remotely on Zoom, Monday through Thursday, 9:30-10:50AM. In-person attendance can earn you some credit for the [Engagement](#engagement) portion of your grade but is not strictly required.
 
 Lecture notebooks will be your main resource in this class. You can access them,
 along with all course materials, by pulling from the [course GitHub
@@ -122,11 +122,13 @@ You are responsible for all material included in the posted lecture notebooks, w
 
 ### Engagement
 
-We want you to be an active participant in your own learning and an active member of our course community. To encourage this, a small portion of your course grade will be determined by your engagement in the course. To earn credit for the week (1% per week), you must do one of the following:
+We want you to be an active participant in your own learning and an active member of our course community. To encourage this, a small portion of your course grade will be determined by your engagement in the course. To earn credit for the week (1% per week), you must do **one** of the following:
 
-- Attend at least 3 out of 4 synchronous Zoom lectures with your camera on. Course staff will take attendance at a random time and give credit to those who are present with cameras on. 
+- Attend at least 3 out of 4 synchronous Zoom lectures with your camera on. Course staff will take attendance at a random time and give credit to those who are present with cameras on at that moment.  
 
 - Pass a ten-minute interview with the instructor on Friday, where you'll talk about the lectures for that week to make sure you are following along.
+
+We encourage you to choose the first option if possible, since being engaged in lecture by listening and asking questions will help you learn, though the second option is available to accommodate students who need additional flexibility. You can do what works best for you each week, and you can change the option you choose from week to week.
 
 
 ---
@@ -208,6 +210,9 @@ office hours and study groups.
 To get help on assignments and concepts, course staff will be hosting several
 office hours per week. All office hours will be held remotely on Zoom. We encourage you to attend and work on assignments there. See the
 [Calendar](../calendar) tab of the course website for the schedule.
+
+{: .warning}
+You should be prepared for a heavy workload in this class. According to SET responses, students spend an average of 10 hours per week on this course outside of scheduled course meetings in the regular academic year. In the summer session, which moves twice as fast, this means you should expect to spent an average of **20 hours** per week working on assignments outside of class. We recognize that this is a huge amount of time, especially if you have other obligations. We want to be upfront about this so you can get a realistic view of what the next five weeks will require of you. Additionally, since there are assignments due four times per week, you will need to work consistently throughout the week. We recommend scheduling several hours each afternoon to work on assignments for this class.
 
 ---
 
