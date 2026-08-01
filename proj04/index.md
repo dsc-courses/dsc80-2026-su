@@ -4,6 +4,7 @@ title: "📊 Final Project"
 description: Description of Final Project.
 nav_exclude: false
 nav_order: 7
+has_toc: false
 ---
 
 <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
@@ -46,19 +47,19 @@ We encourage you to build something you are proud of as this will give you somet
 
 In this project, you will perform an open-ended investigation into a **single dataset**. You must choose **one** of the following six datasets.
 
-### **Business Analytics & Econometrics**
+### Business Analytics & Econometrics
 [Recipes and Ratings 🍽️](recipes-and-ratings){: .btn } &nbsp;&nbsp; [Hawaii Google Maps Reviews 🏝️](google_review_desc){: .btn }
 
-### **Music & Audio**
+### Music & Audio
 [Spotify Music Tracks 🎵](project4-music){: .btn }
 
-### **Social Sciences**
+### Social Sciences
 [League of Legends ⌨️](league-of-legends){: .btn }
 
-### **Science & Infrastructure**
+### Science & Infrastructure
 [Power Outages 🔋](power-outages){: .btn }
 
-### **Wearable Computing & Affective Physiology**
+### Wearable Computing & Affective Physiology
 [UCSD ExtraSensory Dataset 📱](wearable){: .btn }
 
 The dataset description pages linked above each have three sections:
