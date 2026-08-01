@@ -19,11 +19,6 @@ nav_order: 2
 
 <!-- prettier-ignore-end -->
 
-[campuswire]: https://campuswire.com/p/GFDCC5DB7
-[gradescope]: https://www.gradescope.com/courses/1209672
-[github]: https://github.com/dsc-courses/dsc80-2026-wi
-[welcome-survey]: https://forms.gle/byE5q4b1iKsBzEwN7
-
 ## About 🧐
 
 DSC 80 serves as a bridge between lower-division and upper-division data
@@ -53,10 +48,10 @@ You'll need to make accounts on the following sites:
 - **Campuswire:** We’ll be using Campuswire as our course message and discussion board. More
   details are in the [Communication](#communication-) section below. If you
   didn’t already get an invitation to our Campuswire course, [sign up
-  here][campuswire] with join code 4659.
+  here][{{site.urls.campuswirejoin}}] with join code 0258.
 
 - **Gradescope:** You’ll submit all assignments and exams to
-  [Gradescope][gradescope]. This is where all of
+  [Gradescope][{{site.urls.gradescope}}]. This is where all of
   your grades will live as well. Most of the assignments will be coding
   assignments. Parts of these assignments will be manually graded, but most of
   them will be autograded. You should have received an email invitation for
@@ -65,28 +60,25 @@ You'll need to make accounts on the following sites:
 
 - **GitHub:** Like in DSC 30, you'll access all course content (lecture slides
   and assignments) by _pulling_ our course GitHub repository. [The link to the
-  repo is here.][github] In most assignments, you won't need to _push_ anything
+  repo is here.][{{site.urls.github}}] In most assignments, you won't need to _push_ anything
   to GitHub. However, you will need to push to GitHub as part of your Final
   Project, so you'll need to have an account by then.
-
-Note that we will not be using Canvas for anything this quarter.
 
 ### Development Environment
 
 As soon as you are able to, go follow the steps in the [Tech
 Support](../tech_support) page of the course website to set up your development
-environment for the course. The first discussion section on Wednesday, January 7th is designed to help you get your environment set up so you can complete the assignments.
+environment for the course. Ask for help in office hours if you run into any trouble.
 
 ### Forms
 
-Please fill out the [Welcome Survey][welcome-survey] to tell us a bit more about
-yourself and notify us about any exam conflicts.
+Please fill out the [Welcome Survey][{{site.urls.welcome}}], which is very short.
 
 ---
 
 ## Communication 💬
 
-This quarter, we’ll be using Campuswire as our course message board. If you didn’t already get an invitation to our Campuswire course, [sign up here][campuswire] with join code 4659.
+This quarter, we’ll be using Campuswire as our course message board. If you didn’t already get an invitation to our Campuswire course, [sign up here][{{site.urls.campuswirejoin}}] with join code 0258.
 
 If you have a question about anything to do with the course — if you’re stuck
 on a problem, didn’t understand something from lecture, want clarification on
@@ -109,13 +101,11 @@ post instead.**
 
 ### Lectures
 
-Lectures will be held in-person on Tuesdays and Thursdays from 9:30-10:50AM and 11AM-12:20PM in <a href="https://map.concept3d.com/?id=1005#!m/761769?share">PODEM 1A18</a>
-Attendance is not required, **though you are encouraged to
-attend in-person if you are able to**. Lectures will be podcasted.
+Lectures will be held remotely on Zoom, Monday through Thursday 9:30-10:50AM. In-person attendance can earn you some credit for the Engagement portion of your grade.
 
 Lecture notebooks will be your main resource in this class. You can access them,
 along with all course materials, by pulling from the [course GitHub
-repository][github]. We will also link HTML previews of each lecture notebook
+repository][{{site.urls.github}}]. We will also link HTML previews of each lecture notebook
 from the course homepage; you can use these to annotate the lecture notebooks
 with a tablet, if you'd like.
 
@@ -127,23 +117,8 @@ notes that were written to supplement DSC 80 when the course was first created.
 
 You are responsible for all material included in the posted lecture notebooks, whether or not we have time to discuss all of that material in lecture. You may also be tested on material covered only in assignments. You will not be tested on anything that appears only in the readings but not in lectures or assignments, but you should still complete the readings to boost your understanding!
 
-### Discussions and Lab Reflections
-
-Discussions will be held in-person on Wednesdays from 1-1:50PM and 2-2:50PM in <a href="https://map.concept3d.com/?id=1005#!m/237176?share">CSB 002</a>. Discussion sections will be podcasted.
-
-You'll spend the vast majority of your time in this course on [labs](#labs) and
-[projects](#projects), which you'll read more about in the sections below. The
-labs you complete each week will give you hands-on practice with the tools and
-techniques introduced in lectures. While completing the labs is important, it's
-also important to _reflect_ on your lab work once grades are released, and
-think about how you could have approached problems differently (e.g. more
-efficiently).
-
-Therefore, in discussion sections on Wednesdays, the TA will discuss solutions to a _subset_
-of the lab that was due that Monday (2 days prior). When you
-attend, you'll have a chance to discuss your implementation with course staff
-and hear how others attempted the problems. Hopefully, you'll leave with a
-stronger understanding of the learning objectives of the lab. Attending discussion and reflecting on your labs will also benefit you since you'll be allowed to resubmit labs for some additional credit via a redemption policy, described in the next section.
+{: .warning }
+**No discussion section.** This class also has Wednesdays from 3-4:50PM reserved for discussion. With the exception of the midterm exam scheduled for this time on August 19, we will not be using this time to hold regular discussion sections.
 
 ### Labs and Lab Redemption
 
@@ -152,7 +127,7 @@ assignment will consist of a mixture of coding and free response questions.
 Coding questions will ask you to fill in the body of a function. Public tests
 are usually provided so that you can make sure that you\'re on the right track
 (similar to DSC 20), however, your submission will be graded using a private
-autograder with hidden tests. You will access labs (and projects) by pulling the [course GitHub repository][github].
+autograder with hidden tests. You will access labs (and projects) by pulling the [course GitHub repository][{{site.urls.github}}].
 
 Each lab is worth the same amount, but the lowest lab will be dropped when
 calculating your final score. Labs will usually be due **Mondays at 11:59PM**, with the exception of Lab 5 which is due on a Sunday, because of its proximity to the Midterm Exam.
@@ -249,7 +224,7 @@ though the Final Exam will emphasize material after the Midterm Exam.
 
 **Both exams will be administered in-person**. If you have conflicts with
 either of the exams, please let us know on the [Welcome
-Survey][welcome-survey].
+Survey][{{site.urls.welcome}}].
 
 ### Exam Redemption
 
