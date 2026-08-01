@@ -355,7 +355,6 @@ We will use a standard scale for assigning letter grades:
 | **Letter Grade** | A | A- | B+ | B | B- | C+ | C | C- | D | F |
 | **Percentage** | 93+ | 90+ | 87+ | 83+ | 80+ | 77+ | 73+ | 70+ | 60+ | below 60 |
 
-
 We may slightly lower these cutoffs, making it easier to earn a certain grade, but we will never raise the cutoffs. A+ grades are given at the instructor's discretion. If you are taking the course P/NP, you will receive a grade of P if you meet the criteria for a C-
 grade, otherwise you will receive a grade of NP.
 
