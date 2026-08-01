@@ -35,6 +35,7 @@ urls:
   welcome: &welcome 'https://forms.gle/fMcJJniforRPcSZc7'
   github: &github 'https://github.com/dsc-courses/dsc80-2026-su'
   environment: &environment 'https://github.com/dsc-courses/dsc80-2026-su/blob/gh-pages/resources/environment.yml'
+  template: &template 'https://github.com/dsc-courses/dsc80-2026-su/blob/main/projects/project04/template.ipynb'
 
 # Theme settings
 remote_theme: just-the-docs/just-the-docs@v0.12.0
