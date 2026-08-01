@@ -97,11 +97,11 @@ post instead.**
 
 ---
 
-## Course Components 🍎
+## Course Meetings 👩‍💻
 
 ### Lectures
 
-Lectures will be held remotely on Zoom, Monday through Thursday 9:30-10:50AM. In-person attendance can earn you some credit for the Engagement portion of your grade.
+Lectures will be held remotely on Zoom, Monday through Thursday 9:30-10:50AM. In-person attendance can earn you some credit for the Engagement portion of your grade (see below).
 
 Lecture notebooks will be your main resource in this class. You can access them,
 along with all course materials, by pulling from the [course GitHub
@@ -119,6 +119,20 @@ You are responsible for all material included in the posted lecture notebooks, w
 
 {: .note }
 **No discussion section.** This class has Wednesdays from 3-4:50PM reserved for discussion. With the exception of the Midterm Exam scheduled for this time on August 19, we will not be using this time to hold regular discussion sections. Use this time to work on assignments instead!
+
+### Engagement
+
+We want you to be an active participant in your own learning and an active member of our course community. To encourage this, a small portion of your course grade will be determined by your engagement in the course. To earn credit for the week (1% per week), you must do one of the following:
+
+- Attend at least 3 out of 4 synchronous Zoom lectures with your camera on. Course staff will take attendance at a random time and give credit to those who are present with cameras on. 
+
+- Pass a ten-minute interview with the instructor on Friday, where you'll talk about the lectures for that week to make sure you are following along.
+
+
+---
+
+## Assignments 📓
+
 
 ### Labs and Lab Redemption
 
