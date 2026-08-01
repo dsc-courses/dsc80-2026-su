@@ -118,26 +118,23 @@ notes that were written to supplement DSC 80 when the course was first created.
 You are responsible for all material included in the posted lecture notebooks, whether or not we have time to discuss all of that material in lecture. You may also be tested on material covered only in assignments. You will not be tested on anything that appears only in the readings but not in lectures or assignments, but you should still complete the readings to boost your understanding!
 
 {: .note }
-**No discussion section.** This class also has Wednesdays from 3-4:50PM reserved for discussion. With the exception of the midterm exam scheduled for this time on August 19, we will not be using this time to hold regular discussion sections.
+**No discussion section.** This class has Wednesdays from 3-4:50PM reserved for discussion. With the exception of the Midterm Exam scheduled for this time on August 19, we will not be using this time to hold regular discussion sections. Use this time to work on assignments instead!
 
 ### Labs and Lab Redemption
 
-There will be **9 lab assignments** due weekly throughout the quarter. Each lab
-assignment will consist of a mixture of coding and free response questions.
-Coding questions will ask you to fill in the body of a function. Public tests
+There will be **9 lab assignments** due throughout the quarter. Labs have mostly coding questions that ask you to fill in the body of a function, but some free response and other question types may also incorporated. Public tests
 are usually provided so that you can make sure that you\'re on the right track
 (similar to DSC 20), however, your submission will be graded using a private
 autograder with hidden tests. You will access labs (and projects) by pulling the [course GitHub repository]({{site.urls.github}}).
 
 Each lab is worth the same amount, but the lowest lab will be dropped when
-calculating your final score. Labs will usually be due **Mondays at 11:59PM**, with the exception of Lab 5 which is due on a Sunday, because of its proximity to the Midterm Exam.
+calculating your final score. 
 
+We will also have a **lab redemption policy** to encourage you to reflect on your solutions to the lab assignments. The redemption policy allows you to view your graded assignment and resubmit solutions by two days after the original deadline. Your grade for the lab will be the **average** of your original submission's score and your resubmission's score. If you forget to turn in a lab or otherwise miss the original deadline, you can also turn in your work for the resubmission only, which will be averaged with your original score (0), essentially giving you half credit as a late penalty. 
 
-We will also have a lab redemption policy to encourage you to reflect on your solutions to the lab assignments and attend the discussion sections. On Wednesday morning, before the discussion section, we will publish the autograder results for the lab that was just due Monday. You may then review how you did and resubmit the assignment by the next day, **Thursday at 11:59PM**. Your score for the lab will be the **average** of your original submission's score and your resubmission's score. If you forget to turn in a lab or otherwise miss the original deadline, you can also turn in your work for the resubmission only, which will be averaged with your original score (0), essentially giving you half credit as a late penalty. 
+Example: Sam submits Lab 1 on the due date, Monday. On Tuesday, he sees his score, which is a 90% since he lost points on a few hidden tests. He fixes the errors and resubmits on Wednesday, and his new submission gets 100%. His final recorded grade for Lab 1 is 95% (since (90% + 100%) / 2 = 95%).
 
-Example: Sam submits Lab 1 on the due date, Monday. On Wednesday, he sees his score, which is a 90% since he lost points on a few hidden tests. He fixes the errors and resubmits on Thursday, and his new submission gets 100%. His final recorded grade for Lab 1 is 95% (since (90% + 100%) / 2 = 95%).
-
-Note that this redemption policy applies to **labs only, not projects or project checkpoints.**
+Note that this redemption policy applies to labs only, not projects or project checkpoints.
 
 ### Projects
 
@@ -148,17 +145,16 @@ science skills in practical situations. You can think of the projects as being
 mini-take-home-exams that track your _practical_ skills throughout the quarter
 (whereas the exams themselves test for conceptual understanding).
 
-Projects are due bi-weekly. However, the week before a project is due, there
-will often be a _project checkpoint_. This checkpoint will ensure that you\'re
-on-track to complete the project on time, and should (hopefully) be a source of
+Each project has one or two _project checkpoints_ to ensure that you\'re
+on-track to complete the project on time. Checkpoints do not have private tests, so they should (hopefully) be a source of
 easy points.
 
-The Final Project (Project 4) will be due during finals week and can be thought of as a
+The Final Project (Project 4) will be due shortly after the Final Exam and can be thought of as a
 practical component of the Final Exam.
 
 Note that, unlike labs, the lowest project score is not dropped. Projects and project checkpoints will usually be due on **Fridays at 11:59PM**.
 
-**Working in Pairs**
+**Project Partners**
 
 You may work together on projects (and projects only!) with a partner. If you
 work with a partner, you are both required to actively contribute to all parts
@@ -186,30 +182,18 @@ and try to agree on what should be done to make the partnership work well for
 both of you. If that approach is not successful, explain the issues to the
 instructors, who will work with you and your partner to improve the situation.
 
-You may use different partners on different projects.
+You may work with different partners on different projects.
 
-**Note that you may not work with partners on lab assignments, however you're
+{: .note }
+You may not work with partners on lab assignments, however you're
 encouraged to discuss all assignments with others at a conceptual level in
-office hours and study groups.**
+office hours and study groups.
 
 ### Office Hours
 
 To get help on assignments and concepts, course staff will be hosting several
-office hours per week. All office hours will be held in person in HDSI 155. See the
-[Calendar](../calendar) tab of the course website for the most up-to-date
-schedule and instructions.
-
-### Weekly Schedule
-
-To summarize all of the events and deadlines, refer to this general weekly
-schedule (which is subject to change in any given week):
-
-
-| Sunday | Monday | Tuesday | Wednesday | Thursday | Friday     | Saturday |
-| ------ | ------ | ------- | --------- | -------- | ---------- | -------- |
-|        |        | Lecture |           | Lecture  |            |          |
-|        |        |         |   Discussion        |          |  |          |
-| | <span style='color:red'><b>Lab due</b></span> | | | <span style='color:red'><b>Lab resubmission</b></span>| <span style='color:red'><b>Project/checkpoint due</b></span> | |
+office hours per week. All office hours will be held remotely on Zoom. We encourage you to attend and work on assignments there. See the
+[Calendar](../calendar) tab of the course website for the schedule.
 
 ---
 
@@ -218,11 +202,21 @@ schedule (which is subject to change in any given week):
 This class has one Midterm Exam and one Final Exam. Exams are cumulative,
 though the Final Exam will emphasize material after the Midterm Exam.
 
-- **Midterm Exam**: Tuesday, February 10th (Week 6) during lecture
+- **Midterm Exam**: Wednesday, August 19th, 2-3:50PM 
 
-- **Final Exam:** Saturday, March 14th, 8-11AM
+- **Final Exam:** Friday, September 4th, 8-11AM
 
-Both exams will be administered remotely and synchronously. 
+Both exams will be administered synchronously, remotely through Zoom, and proctored by course staff. 
+
+You will be allowed **one sheet of double-sided handwritten notes** on each exam. Other than this, any additional aids, including the internet and AI tools, may not be used on the exam. We will employ a few strategies to make sure that your exam scores accurately reflect your knowledge of course material:
+
+- We will have proctors check your room setup. Set yourself up at a work area with only your laptop (with camera), note sheet, blank paper, student ID, and writing utensils. Leave your phone and other electronic devices out of reach. Set up your webcam so that we can see your hands at all times.
+
+- We will display questions on the screen one at a time and give you time to answer each question. Once we move along to display the next question, we will not go back to previous questions. You will write your answer to each question on blank paper. You will not be able to navigate through the exam yourself, which means you should not touch your computer while the exam is in session. 
+
+- After the exam, we will ask some students to meet for brief oral exams. If we see anything suspicious in your behavior while taking the exam or we notice anything unusual on your exam submission, we will ask you to meet. We will also randomly select students for oral exams, to use as "controls", so it is not necessarily something to be concerned about if we do request an oral exam.
+
+- Your exam score will be determined both by your submitted answers and by your understanding demonstrated during any oral exam that we administer. This means that if you give the correct answer but are unable to justify it verbally, you will not receive credit. 
 
 ### Exam Redemption
 
@@ -248,11 +242,12 @@ Here is how we'll compute your grade:
 
 | Component           | Weight | Notes                                                                      |
 | ------------------- | ------ | -------------------------------------------------------------------------- |
+| Engagement          | 5%     | 1% per week                                                                |
 | Labs                | 20%    | 2.5% per lab, lowest dropped                                               |
 | Projects            | 25%    | 5% each for Projects 1-3, 10% for Project 4                                |
-| Project Checkpoints | 5%     | 1% each                                                                     |
+| Project Checkpoints | 5%     | 1% each                                                                    |
 | Midterm Exam        | 20%    | see the Redemption Policy above                                            |
-| Final Exam          | 30%    |                                                                          
+| Final Exam          | 25%    |                                                                          
 
 ### Late Policy, Slip Days, and Drops
 
@@ -262,8 +257,8 @@ deadline and only the most recent submission will count, so it’s a good habit
 to submit early and often. If you make a submission after the
 deadline, your assignment will be counted as late.
 
-You have **5 "slip days"** to use throughout the quarter on **projects or project checkpoints**. A slip day extends
-the deadline of an assignment by 24 hours. You may use up to 2 slip days for a single deadline, meaning no assignments will be accepted more than 48 hours after the deadline. 
+You have **3 "slip days"** to use throughout the quarter on **projects or project checkpoints**. A slip day extends
+the deadline of an assignment by 24 hours. You may use only one slip day for each deadline, meaning no assignments will be accepted more than 24 hours after the deadline. 
 
 You may not use slip days on lab assignments. If you miss a deadline for a lab, you can use the resubmission policy to get 50% credit on the lab. We also drop your lowest lab score.
 
@@ -278,14 +273,14 @@ need to ask in order to use one.** It’s your responsibility to keep track of
 how many you have left. If you’ve run out of slip days and submit an assignment
 late, that assignment may still be graded, but you will receive a 0 on it when
 we calculate grades at the end of the quarter. However, in the event that you
-use all 5 days and submit another assignment late, we will allocate your slip
+use all your days and submit another assignment late, we will allocate your slip
 days to your projects in **reverse-chronological order**. This is done to prevent you from receiving a 0 on the Final Project if you've run out of slip days and submit it late.
 
 ### Regrade Requests
 
 Most of the labs and projects are autograded, but some questions are manually
 graded. If you feel that there in an error in the autograder or that the manual
-grader has made a mistake, you may submit a regrade request within **three
+grader has made a mistake, you may submit a regrade request within **two
 days** of the grades being released. If you do not submit a regrade request
 within this time frame, your original grade will be final.
 
@@ -316,8 +311,8 @@ date, you have some options:
 
 1.  For a project or project checkpoint, if it is still before the slip day deadline, you may use slip days to fix your code and resubmit. Note that you're free to do this even if your code runs – this is just making use of the normal slip day mechanism to submit an assignment late. Likewise, for a lab, if it is before the resubmission deadline, you can resubmit the lab as usual, and you'll get half credit because you'll have a 0 on the original submission.
 2.  If it is past the slip day deadline **and** your code requires only minor fixes
-    (e.g., the file name is wrong) we will fix your code at the cost of **2**
-    slip days. Note that these slip days are in addition to any slip days you
+    (e.g., the file name is wrong) we will fix your code **at the cost of a
+    slip day**. Note that this slip day is **in addition** to any slip days you
     already used on the assignment. You can submit a catastrophe regrade
     request the same way you submit a regular autograder regrade request, via a private post on Campuswire.
 
@@ -501,7 +496,7 @@ From the [Office for Students with Disabilities (OSD)](https://osd.ucsd.edu/):
 > work with you.
 
 If you already have accommodations via OSD, please make sure that we receive
-your Authorization for Accommodation (AFA) letter by the end of Week 1 so that
+your Authorization for Accommodation (AFA) letter by the third day of class so that
 we can make arrangements for accommodations. Share your AFA letter with the
 instructor and the Data Science OSD Liaison, who can be reached at
 dscstudent@ucsd.edu.
