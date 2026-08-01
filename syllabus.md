@@ -328,7 +328,7 @@ strange autograder problem.
 In the case that you submit code that doesn't run and discover this at a later
 date, you have some options:
 
-1.  For a project or project checkpoint, if it is still before the slip day deadline, you may use slip days to fix your code and resubmit. Note that you're free to do this even if your code runs – this is just making use of the normal slip day mechanism to submit an assignment late. Likewise, for a lab, if it is before the resubmission deadline, you can resubmit the lab as usual, and you'll get half credit because you'll have a 0 on the original submission.
+1.  For a project or project checkpoint, if it is still before the slip day deadline, you may use a slip day to fix your code and resubmit. Note that you're free to do this even if your code runs – this is just making use of the normal slip day mechanism to submit an assignment late. Likewise, for a lab, if it is before the resubmission deadline, you can resubmit the lab as usual, and you'll get half credit because you'll have a 0 on the original submission.
 2.  If it is past the slip day deadline **and** your code requires only minor fixes
     (e.g., the file name is wrong) we will fix your code **at the cost of a
     slip day**. Note that this slip day is **in addition** to any slip days you
@@ -394,7 +394,7 @@ integrity. Ignorance of the rules will not excuse you from any violations.
 
 ### What counts as cheating?
 
-In DSC 80, you can read books, surf the web, talk to your friends and the DSC
+In DSC 80, you can read books, use the internet, and talk to your friends and the DSC
 80 staff to get help understanding the concepts you need to know to complete
 your assignments. However, all code must be written by you (or, in the instance
 of projects, together with your partner).
@@ -402,8 +402,7 @@ of projects, together with your partner).
 The following activities are considered cheating and are not allowed in DSC 80
 (not an exhaustive list):
 
-- Using or submitting code acquired from other students (except from your partner during projects), the web, or any other resource not
-  officially sanctioned by this course
+- Using or submitting code acquired from other peoples (except from your partner during projects)
 - Posting your code online, including on Campuswire, unless privately to instructors
   only
 - Having any other person complete any part of your assignment on your behalf
@@ -412,21 +411,20 @@ The following activities are considered cheating and are not allowed in DSC 80
   course
 - Splitting up project questions with your partner and each
   working on different questions
-- Collaborating with others on exams
+- Collaborating with others or using unauthorized resources on exams 
 
 The following activities are examples of appropriate collaboration and are
 allowed in DSC 80 (not an exhaustive list):
 
-- Discussing the general approach to solving labs or projects
-- Talking about problem-solving strategies or issues you ran into and how you
-  solved them
+- Discussing how to solve problems in labs or projects without sharing code
+- Talking about issues you ran into and how you solved them
 - Discussing the answers to exams with other students who have already taken
   the exam after the exam is complete
 - Using code provided in class, by the textbook or any other assigned reading
   or video, with attribution
 - Google searching for documentation on Python or `pandas`
 - Working together with other students on assignments without copying or
-  sharing answers
+  showing each other your answers
 - Posting a question about your approach to a problem on Campuswire, without sharing
   your code
 
@@ -440,7 +438,7 @@ Here are some suggestions for completing your work:
 - Don't start with someone else's code and make changes to it, or in any way
   share code with other students.
 - If you are talking to another student about an assignment, don't take notes,
-  and wait an hour afterward before you write any code.
+  and wait an hour afterward before you write any code. 
 
 ### Use of Generative Artificial Intelligence
 
@@ -465,15 +463,15 @@ other things you know is important for learning and retention.
 
 Unfortunately, GenAI tools are not a consistently reliable source of quality
 information. Because of how GenAI tools are trained, they often provide answers
-and write code that _look_ correct, but aren't actually correct. A goal of your
+and write code that _look_ correct, but aren't actually correct. They can also be extremely overconfident, making them hard to trust! A goal of your
 education is to develop an ability to identify and produce information that
 actually is correct and doesn’t just sound correct. Human supervision of GenAI
 tools is always necessary.
 
-Proceed with caution when using tools to assist you with your assignments. DSC
+Proceed with caution when using tools to assist you with your assignments. **DSC
 80 is a foundational class for your study of data science; you need to master
 the skills and concepts of this course if you want to use data science
-effectively. Through exams, you will be tested on your independent ability to
+effectively.** Through exams, you will be tested on your independent ability to
 apply course material to novel problems. Labs and projects are meant to prepare
 you for these assessments, so overreliance on GenAI for assignments will rob you
 of opportunities to learn and make it hard for you to perform well on exams.
@@ -485,18 +483,18 @@ If you do use GenAI to assist you on assignments, keep these guidelines in mind:
   effectively, you need to engineer your prompts carefully.
 - **Test the outputs.** GenAI tools can and do make mistakes, and being able to
   verify the correctness of a proposed answer is an important skill for you to
-  develop. Validate the output against course-provided references, or follow up
+  develop, perhaps *the* most important skill these days. Validate the output against course-provided references, or follow up
   with a search on Google or Stack Overflow. Remember that GenAI tools provide
   crowdsourced likely answers, not necessarily correct answers.
 - **Don’t submit any code that you don’t understand, or that uses content not
-  taught in this class.** In our experience last quarter, students who used
+  taught in this class.** In our experience, past students who used
   ChatGPT to help with assignments ended up with code that was difficult for
   both them and the teaching staff to understand. If you answer questions with
   out-of-scope content, you are not practicing the foundational skills that the
   course is meant to teach you. Be careful!
 
 If your assignment submission includes any content generated by an AI tool, it
-should be cited to acknowledge the source of the material. You can include citations as comments in your code.
+**should be cited** to acknowledge the source of the material. You can include citations as comments in your code.
 
 ---
 
