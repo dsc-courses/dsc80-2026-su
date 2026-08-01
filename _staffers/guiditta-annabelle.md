@@ -5,7 +5,7 @@ pronouns: she/her
 photo: assets/staff-images/guiditta-annabelle.png
 description: 3rd year, Data Science, Eighth
 hometown: Downey, CA
-askabout: Theater, Crochet, Valorant, Baking
+askabout: Theater, crochet, Valorant, baking
 foodemoji: 🥪
 food: Prendi E Vai, Little Frenchie, White Rice Bodega
 ---
