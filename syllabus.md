@@ -101,7 +101,7 @@ post instead.**
 
 ### Lectures
 
-Lectures will be held remotely on Zoom, Monday through Thursday 9:30-10:50AM. In-person attendance can earn you some credit for the Engagement portion of your grade (see below).
+Lectures will be held remotely on Zoom, Monday through Thursday, 9:30-10:50AM. In-person attendance can earn you some credit for the [Engagement](#engagement) portion of your grade but is not strictly required.
 
 Lecture notebooks will be your main resource in this class. You can access them,
 along with all course materials, by pulling from the [course GitHub
@@ -122,11 +122,13 @@ You are responsible for all material included in the posted lecture notebooks, w
 
 ### Engagement
 
-We want you to be an active participant in your own learning and an active member of our course community. To encourage this, a small portion of your course grade will be determined by your engagement in the course. To earn credit for the week (1% per week), you must do one of the following:
+We want you to be an active participant in your own learning and an active member of our course community. To encourage this, a small portion of your course grade will be determined by your engagement in the course. To earn credit for the week (1% per week), you must do **one** of the following:
 
-- Attend at least 3 out of 4 synchronous Zoom lectures with your camera on. Course staff will take attendance at a random time and give credit to those who are present with cameras on. 
+- Attend at least 3 out of 4 synchronous Zoom lectures with your camera on. Course staff will take attendance at a random time and give credit to those who are present with cameras on at that moment.  
 
 - Pass a ten-minute interview with the instructor on Friday, where you'll talk about the lectures for that week to make sure you are following along.
+
+We encourage you to choose the first option if possible, since being engaged in lecture by listening and asking questions will help you learn, though the second option is available to accommodate students who need additional flexibility. You can do what works best for you each week, and you can change the option you choose from week to week.
 
 
 ---
@@ -209,6 +211,9 @@ To get help on assignments and concepts, course staff will be hosting several
 office hours per week. All office hours will be held remotely on Zoom. We encourage you to attend and work on assignments there. See the
 [Calendar](../calendar) tab of the course website for the schedule.
 
+{: .warning}
+You should be prepared for a heavy workload in this class. According to SET responses, students spend an average of 10 hours per week on this course outside of scheduled course meetings in the regular academic year. In the summer session, which moves twice as fast, this means you should expect to spent an average of **20 hours** per week working on assignments outside of class. We recognize that this is a huge amount of time, especially if you have other obligations. We want to be upfront about this so you can get a realistic view of what the next five weeks will require of you. Additionally, since there are assignments due four times per week, you will need to work consistently throughout the week. We recommend scheduling several hours each afternoon to work on assignments for this class.
+
 ---
 
 ## Exams 📝
@@ -225,6 +230,8 @@ Both exams will be administered synchronously, remotely through Zoom, and procto
 You will be allowed **one sheet of double-sided handwritten notes** on each exam. Other than this, any additional aids, including the internet and AI tools, may not be used on the exam. We will employ a few strategies to make sure that your exam scores accurately reflect your knowledge of course material:
 
 - We will have proctors check your room setup. Set yourself up at a work area with only your laptop (with camera), note sheet, blank paper, student ID, and writing utensils. Leave your phone and other electronic devices out of reach. Set up your webcam so that we can see your hands at all times.
+
+<center><img src="../assets/images/hands.png" width=400></center>
 
 - We will display questions on the screen one at a time and give you time to answer each question. Once we move along to display the next question, we will not go back to previous questions. You will write your answer to each question on blank paper. You will not be able to navigate through the exam yourself, which means you should not touch your computer while the exam is in session. 
 
@@ -323,7 +330,7 @@ strange autograder problem.
 In the case that you submit code that doesn't run and discover this at a later
 date, you have some options:
 
-1.  For a project or project checkpoint, if it is still before the slip day deadline, you may use slip days to fix your code and resubmit. Note that you're free to do this even if your code runs – this is just making use of the normal slip day mechanism to submit an assignment late. Likewise, for a lab, if it is before the resubmission deadline, you can resubmit the lab as usual, and you'll get half credit because you'll have a 0 on the original submission.
+1.  For a project or project checkpoint, if it is still before the slip day deadline, you may use a slip day to fix your code and resubmit. Note that you're free to do this even if your code runs – this is just making use of the normal slip day mechanism to submit an assignment late. Likewise, for a lab, if it is before the resubmission deadline, you can resubmit the lab as usual, and you'll get half credit because you'll have a 0 on the original submission.
 2.  If it is past the slip day deadline **and** your code requires only minor fixes
     (e.g., the file name is wrong) we will fix your code **at the cost of a
     slip day**. Note that this slip day is **in addition** to any slip days you
@@ -389,7 +396,7 @@ integrity. Ignorance of the rules will not excuse you from any violations.
 
 ### What counts as cheating?
 
-In DSC 80, you can read books, surf the web, talk to your friends and the DSC
+In DSC 80, you can read books, use the internet, and talk to your friends and the DSC
 80 staff to get help understanding the concepts you need to know to complete
 your assignments. However, all code must be written by you (or, in the instance
 of projects, together with your partner).
@@ -397,8 +404,7 @@ of projects, together with your partner).
 The following activities are considered cheating and are not allowed in DSC 80
 (not an exhaustive list):
 
-- Using or submitting code acquired from other students (except from your partner during projects), the web, or any other resource not
-  officially sanctioned by this course
+- Using or submitting code acquired from other peoples (except from your partner during projects)
 - Posting your code online, including on Campuswire, unless privately to instructors
   only
 - Having any other person complete any part of your assignment on your behalf
@@ -407,21 +413,20 @@ The following activities are considered cheating and are not allowed in DSC 80
   course
 - Splitting up project questions with your partner and each
   working on different questions
-- Collaborating with others on exams
+- Collaborating with others or using unauthorized resources on exams 
 
 The following activities are examples of appropriate collaboration and are
 allowed in DSC 80 (not an exhaustive list):
 
-- Discussing the general approach to solving labs or projects
-- Talking about problem-solving strategies or issues you ran into and how you
-  solved them
+- Discussing how to solve problems in labs or projects without sharing code
+- Talking about issues you ran into and how you solved them
 - Discussing the answers to exams with other students who have already taken
   the exam after the exam is complete
 - Using code provided in class, by the textbook or any other assigned reading
   or video, with attribution
 - Google searching for documentation on Python or `pandas`
 - Working together with other students on assignments without copying or
-  sharing answers
+  showing each other your answers
 - Posting a question about your approach to a problem on Campuswire, without sharing
   your code
 
@@ -435,7 +440,7 @@ Here are some suggestions for completing your work:
 - Don't start with someone else's code and make changes to it, or in any way
   share code with other students.
 - If you are talking to another student about an assignment, don't take notes,
-  and wait an hour afterward before you write any code.
+  and wait an hour afterward before you write any code. 
 
 ### Use of Generative Artificial Intelligence
 
@@ -460,15 +465,15 @@ other things you know is important for learning and retention.
 
 Unfortunately, GenAI tools are not a consistently reliable source of quality
 information. Because of how GenAI tools are trained, they often provide answers
-and write code that _look_ correct, but aren't actually correct. A goal of your
+and write code that _look_ correct, but aren't actually correct. They can also be extremely overconfident, making them hard to trust! A goal of your
 education is to develop an ability to identify and produce information that
 actually is correct and doesn’t just sound correct. Human supervision of GenAI
 tools is always necessary.
 
-Proceed with caution when using tools to assist you with your assignments. DSC
+Proceed with caution when using tools to assist you with your assignments. **DSC
 80 is a foundational class for your study of data science; you need to master
 the skills and concepts of this course if you want to use data science
-effectively. Through exams, you will be tested on your independent ability to
+effectively.** Through exams, you will be tested on your independent ability to
 apply course material to novel problems. Labs and projects are meant to prepare
 you for these assessments, so overreliance on GenAI for assignments will rob you
 of opportunities to learn and make it hard for you to perform well on exams.
@@ -480,18 +485,18 @@ If you do use GenAI to assist you on assignments, keep these guidelines in mind:
   effectively, you need to engineer your prompts carefully.
 - **Test the outputs.** GenAI tools can and do make mistakes, and being able to
   verify the correctness of a proposed answer is an important skill for you to
-  develop. Validate the output against course-provided references, or follow up
+  develop, perhaps *the* most important skill these days. Validate the output against course-provided references, or follow up
   with a search on Google or Stack Overflow. Remember that GenAI tools provide
   crowdsourced likely answers, not necessarily correct answers.
 - **Don’t submit any code that you don’t understand, or that uses content not
-  taught in this class.** In our experience last quarter, students who used
+  taught in this class.** In our experience, past students who used
   ChatGPT to help with assignments ended up with code that was difficult for
   both them and the teaching staff to understand. If you answer questions with
   out-of-scope content, you are not practicing the foundational skills that the
   course is meant to teach you. Be careful!
 
 If your assignment submission includes any content generated by an AI tool, it
-should be cited to acknowledge the source of the material. You can include citations as comments in your code.
+**should be cited** to acknowledge the source of the material. You can include citations as comments in your code.
 
 ---
 
