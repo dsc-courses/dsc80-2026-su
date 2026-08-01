@@ -348,14 +348,13 @@ the best course of action. Note that an Incomplete does not allow you to re-do
 work that has already been completed, only to do work that hasn’t been
 completed, so it’s best to reach out right away.
 
-
 ### Letter Grades 
+
 We will use a standard scale for assigning letter grades:
 
-<table style="width:auto; table-layout:auto;">
-<tr><td><b>Letter Grade</b></td><td style="padding:2px 8px;">A</td><td style="padding:2px 8px;">A-</td><td style="padding:2px 8px;">B+</td><td style="padding:2px 8px;">B</td><td style="padding:2px 8px;">B-</td><td style="padding:2px 8px;">C+</td><td style="padding:2px 8px;">C</td><td style="padding:2px 8px;">C-</td><td style="padding:2px 8px;">D</td><td style="padding:2px 8px;">F</td></tr>
-<tr><td><b>Percentage</b></td><td style="padding:2px 8px;">93+</td><td style="padding:2px 8px;">90+</td><td style="padding:2px 8px;">87+</td><td style="padding:2px 8px;">83+</td><td style="padding:2px 8px;">80+</td><td style="padding:2px 8px;">77+</td><td style="padding:2px 8px;">73+</td><td style="padding:2px 8px;">70+</td><td style="padding:2px 8px;">60+</td><td style="padding:2px 8px;">below 60</td></tr>
-</table>
+| **Letter Grade** | A | A- | B+ | B | B- | C+ | C | C- | D | F |
+| **Percentage** | 93+ | 90+ | 87+ | 83+ | 80+ | 77+ | 73+ | 70+ | 60+ | below 60 |
+
 
 We may slightly lower these cutoffs, making it easier to earn a certain grade, but we will never raise the cutoffs. A+ grades are given at the instructor's discretion. If you are taking the course P/NP, you will receive a grade of P if you meet the criteria for a C-
 grade, otherwise you will receive a grade of NP.
