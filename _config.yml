@@ -34,6 +34,7 @@ urls:
   practice: &practice 'https://practice.dsc80.com/'
   welcome: &welcome 'https://forms.gle/fMcJJniforRPcSZc7'
   github: &github 'https://github.com/dsc-courses/dsc80-2026-su'
+  environment: &environment 'https://github.com/dsc-courses/dsc80-2026-su/blob/gh-pages/resources/environment.yml'
 
 # Theme settings
 remote_theme: just-the-docs/just-the-docs@v0.12.0
