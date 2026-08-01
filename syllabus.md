@@ -48,10 +48,10 @@ You'll need to make accounts on the following sites:
 - **Campuswire:** We’ll be using Campuswire as our course message and discussion board. More
   details are in the [Communication](#communication-) section below. If you
   didn’t already get an invitation to our Campuswire course, [sign up
-  here][{{site.urls.campuswirejoin}}] with join code 0258.
+  here]({{site.urls.campuswirejoin}}) with join code 0258.
 
 - **Gradescope:** You’ll submit all assignments and exams to
-  [Gradescope][{{site.urls.gradescope}}]. This is where all of
+  [Gradescope]({{site.urls.gradescope}}). This is where all of
   your grades will live as well. Most of the assignments will be coding
   assignments. Parts of these assignments will be manually graded, but most of
   them will be autograded. You should have received an email invitation for
@@ -60,7 +60,7 @@ You'll need to make accounts on the following sites:
 
 - **GitHub:** Like in DSC 30, you'll access all course content (lecture slides
   and assignments) by _pulling_ our course GitHub repository. [The link to the
-  repo is here.][{{site.urls.github}}] In most assignments, you won't need to _push_ anything
+  repo is here.]({{site.urls.github}}) In most assignments, you won't need to _push_ anything
   to GitHub. However, you will need to push to GitHub as part of your Final
   Project, so you'll need to have an account by then.
 
@@ -72,13 +72,13 @@ environment for the course. Ask for help in office hours if you run into any tro
 
 ### Forms
 
-Please fill out the [Welcome Survey][{{site.urls.welcome}}], which is very short.
+Please fill out the [Welcome Survey]({{site.urls.welcome}}), which is very short.
 
 ---
 
 ## Communication 💬
 
-This quarter, we’ll be using Campuswire as our course message board. If you didn’t already get an invitation to our Campuswire course, [sign up here][{{site.urls.campuswirejoin}}] with join code 0258.
+This quarter, we’ll be using Campuswire as our course message board. If you didn’t already get an invitation to our Campuswire course, [sign up here]({{site.urls.campuswirejoin}}) with join code 0258.
 
 If you have a question about anything to do with the course — if you’re stuck
 on a problem, didn’t understand something from lecture, want clarification on
@@ -105,7 +105,7 @@ Lectures will be held remotely on Zoom, Monday through Thursday 9:30-10:50AM. In
 
 Lecture notebooks will be your main resource in this class. You can access them,
 along with all course materials, by pulling from the [course GitHub
-repository][{{site.urls.github}}]. We will also link HTML previews of each lecture notebook
+repository]({{site.urls.github}}). We will also link HTML previews of each lecture notebook
 from the course homepage; you can use these to annotate the lecture notebooks
 with a tablet, if you'd like.
 
@@ -117,7 +117,7 @@ notes that were written to supplement DSC 80 when the course was first created.
 
 You are responsible for all material included in the posted lecture notebooks, whether or not we have time to discuss all of that material in lecture. You may also be tested on material covered only in assignments. You will not be tested on anything that appears only in the readings but not in lectures or assignments, but you should still complete the readings to boost your understanding!
 
-{: .warning }
+{: .note }
 **No discussion section.** This class also has Wednesdays from 3-4:50PM reserved for discussion. With the exception of the midterm exam scheduled for this time on August 19, we will not be using this time to hold regular discussion sections.
 
 ### Labs and Lab Redemption
@@ -127,7 +127,7 @@ assignment will consist of a mixture of coding and free response questions.
 Coding questions will ask you to fill in the body of a function. Public tests
 are usually provided so that you can make sure that you\'re on the right track
 (similar to DSC 20), however, your submission will be graded using a private
-autograder with hidden tests. You will access labs (and projects) by pulling the [course GitHub repository][{{site.urls.github}}].
+autograder with hidden tests. You will access labs (and projects) by pulling the [course GitHub repository]({{site.urls.github}}).
 
 Each lab is worth the same amount, but the lowest lab will be dropped when
 calculating your final score. Labs will usually be due **Mondays at 11:59PM**, with the exception of Lab 5 which is due on a Sunday, because of its proximity to the Midterm Exam.
@@ -222,9 +222,7 @@ though the Final Exam will emphasize material after the Midterm Exam.
 
 - **Final Exam:** Saturday, March 14th, 8-11AM
 
-**Both exams will be administered in-person**. If you have conflicts with
-either of the exams, please let us know on the [Welcome
-Survey][{{site.urls.welcome}}].
+Both exams will be administered remotely and synchronously. 
 
 ### Exam Redemption
 
