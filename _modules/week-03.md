@@ -1,5 +1,5 @@
 ---
-title: "Week 3 \u2013 HTTP and HTML / Midterm, Regular Expressions"
+title: Week 3 – HTTP and HTML / Midterm, Regular Expressions
 weekNumber: 3
 days:
 - date: '2026-08-17'

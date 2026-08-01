@@ -1,5 +1,5 @@
 ---
-title: "Week 2 \u2013 Messy Data, Statistical Testing / Missing Values"
+title: Week 2 – Messy Data, Statistical Testing / Missing Values
 weekNumber: 2
 days:
 - date: '2026-08-10'
@@ -20,18 +20,14 @@ days:
     reading: '[Ch. 17](https://learningds.org/ch/17/inf_pred_gen_intro.html)'
 - date: '2026-08-12'
   events:
-  - name: DISC 2
-    type: disc
-    title: Lab 2 Reflection; Lab 3 Reflection
-    reading: ''
-  - name: PROJ 2
-    type: proj
-    title: Project 2 Checkpoint
-    reading: ''
   - name: LEC 7
     type: lecture
     title: Missingness Mechanisms
     reading: '[A1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4121561/), [A2](https://stefvanbuuren.name/fimd/sec-MCAR.html)'
+  - name: PROJ 2
+    type: proj
+    title: Checkpoint - Loans 💸
+    reading: ''
 - date: '2026-08-13'
   events:
   - name: LEC 8
@@ -48,6 +44,6 @@ days:
   events:
   - name: PROJ 2
     type: proj
-    title: Project 2
+    title: Loans 💸
     reading: ''
 ---

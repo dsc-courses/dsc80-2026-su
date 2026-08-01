@@ -17,6 +17,24 @@ import pandas as pd
 from docopt import docopt
 from yaml import dump
 
+# Same-day display order: lectures/exams before deadlines.
+EVENT_PRIORITY = {
+    "Lecture": 0,
+    "Exam": 1,
+    "Discussion": 2,
+    "Lab Due": 3,
+    "Project Due": 4,
+    "Canceled": 5,
+}
+
+# Project label + emoji (replaces trailing "__" placeholders in the CSV).
+PROJECT_INFO = [
+    ("Gradebook", "PROJ 1", "💯"),
+    ("Loans", "PROJ 2", "💸"),
+    ("Language Models", "PROJ 3", "🗣"),
+    ("Data Science Lifecycle", "PROJ 4", "🔁"),
+]
+
 
 def generate_modules(csv_file):
     df = (
@@ -26,6 +44,7 @@ def generate_modules(csv_file):
         .pipe(melt_into_events)
         .pipe(mark_exams_and_canceled_lectures)
         .pipe(number_events)
+        .pipe(order_events)
     )
     readings = pd.read_csv(csv_file).pipe(make_readings)
     df.pipe(write_into_module_files, readings=readings)
@@ -55,7 +74,8 @@ def melt_into_events(df: pd.DataFrame):
             var_name="event_type",
             value_name="title",
         )
-        .dropna(subset=["title"])
+        .dropna(subset=["title", "date", "week"])
+        .loc[lambda d: d["title"].astype(str).str.strip().ne("")]
         .assign(week=lambda df: df["week"].astype(int))
         .sort_values("date")
     )
@@ -74,16 +94,32 @@ def mark_exams_and_canceled_lectures(
     return df.assign(event_type=marked_events)
 
 
+def _project_meta(title: str):
+    """Return (event_number, title_with_emoji) for a project due title."""
+    cleaned = title.strip().replace(" __", "").replace("__", "").strip()
+    for keyword, number, emoji in PROJECT_INFO:
+        if keyword in cleaned:
+            if cleaned.endswith(emoji):
+                return number, cleaned
+            return number, f"{cleaned} {emoji}"
+    # Legacy "Project N ..." titles
+    match = pd.Series([cleaned]).str.extract(r"Project (\d+)")[0].iloc[0]
+    if pd.notna(match):
+        return f"PROJ {int(match)}", cleaned
+    if "Final Project" in cleaned:
+        return "FINAL PROJ", cleaned
+    return "PROJ", cleaned
+
+
 def number_events(df):
     # Number lectures from 1-N, labs from 1-N, projects from 1-N, etc.
     #
     # [1] Labs: Need to take out Lab 1, Lab 2, etc. from the title
-    # [2] Projects: Extract number from "Project 1 checkpoint", "Project 2", etc.
+    # [2] Projects: named projects (Gradebook, Loans, ...) or legacy Project N
     # [3] Lectures: Number from 1-N
     # [4] Discussions: Number from 1-N
     # [5] Exams: Don't number
-    # [6] Final Project: Mark as "FINAL PROJ"
-    # [7] Canceled: Don't number
+    # [6] Canceled: Don't number
     df = df.copy()
 
     # [1] Labs
@@ -95,12 +131,10 @@ def number_events(df):
     df.loc[lab_titles.index, "title"] = lab_titles
 
     # [2] Projects
-    regular_projects = (
-        df.query('event_type == "Project Due"')["title"]
-        .str.extract(r"Project (\d+)")[0]
-        .dropna()
-    )
-    project_numbers = "PROJ " + regular_projects
+    proj_mask = df["event_type"] == "Project Due"
+    proj_meta = df.loc[proj_mask, "title"].map(_project_meta)
+    project_numbers = proj_meta.map(lambda x: x[0])
+    df.loc[proj_mask, "title"] = proj_meta.map(lambda x: x[1])
 
     # [3] Lectures
     lecs = df.query('event_type == "Lecture"')
@@ -119,15 +153,6 @@ def number_events(df):
         event_numbers="EXAM"
     )["event_numbers"]
 
-    # [6] Final Project
-    final_proj = df[
-        (df["event_type"] == "Project Due")
-        & df["title"].str.contains("Final Project")
-    ].assign(event_number="FINAL PROJ")["event_number"]
-
-    # [7] Canceled
-    # Don't actually need to handle to leave as NaN
-
     event_numbers = pd.concat(
         [
             lab_numbers,
@@ -135,10 +160,19 @@ def number_events(df):
             lec_numbers,
             disc_numbers,
             exam_numbers,
-            final_proj,
         ]
     )
     return df.assign(event_number=event_numbers)
+
+
+def order_events(df):
+    return (
+        df.assign(
+            _priority=df["event_type"].map(EVENT_PRIORITY).fillna(99)
+        )
+        .sort_values(["date", "_priority"], kind="mergesort")
+        .drop(columns=["_priority"])
+    )
 
 
 def make_readings(df):
@@ -176,7 +210,7 @@ def write_into_module_files(
     def write_week_module_file(week_df):
         week = int(week_df["week"].iloc[0])
         week_title = week_df["week_title"].iloc[0]
-        date_events = week_df.groupby("date").apply(
+        date_events = week_df.groupby("date", sort=True).apply(
             make_days, include_groups=False
         )
         days = [
@@ -190,13 +224,14 @@ def write_into_module_files(
                 "days": days,
             },
             sort_keys=False,
+            allow_unicode=True,
         )
         module_file_path = f"_modules/week-{week:02d}.md"
         with open(module_file_path, "w") as f:
             f.writelines(["---\n", week_data, "---\n"])
         print(f"Wrote: {module_file_path}")
 
-    return df.groupby("week")[df.columns].apply(write_week_module_file)
+    return df.groupby("week", sort=True)[df.columns].apply(write_week_module_file)
 
 
 if __name__ == "__main__":

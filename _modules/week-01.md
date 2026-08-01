@@ -1,5 +1,5 @@
 ---
-title: "Week 1 \u2013 From BabyPandas to Pandas / DataFrames"
+title: Week 1 – From BabyPandas to Pandas / DataFrames
 weekNumber: 1
 days:
 - date: '2026-08-03'
@@ -20,18 +20,14 @@ days:
     reading: ''
 - date: '2026-08-05'
   events:
-  - name: PROJ 1
-    type: proj
-    title: Project 1 Checkpoint
-    reading: ''
-  - name: DISC 1
-    type: disc
-    title: Environment Setup; Lab 1 Reflection
-    reading: ''
   - name: LEC 3
     type: lecture
     title: Aggregating
     reading: '[Ch. 6.2](https://learningds.org/ch/06/pandas_aggregating.html)'
+  - name: PROJ 1
+    type: proj
+    title: Checkpoint - Gradebook 💯
+    reading: ''
 - date: '2026-08-06'
   events:
   - name: LEC 4
@@ -48,6 +44,6 @@ days:
   events:
   - name: PROJ 1
     type: proj
-    title: Project 1
+    title: Gradebook 💯
     reading: ''
 ---
