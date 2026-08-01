@@ -231,6 +231,8 @@ You will be allowed **one sheet of double-sided handwritten notes** on each exam
 
 - We will have proctors check your room setup. Set yourself up at a work area with only your laptop (with camera), note sheet, blank paper, student ID, and writing utensils. Leave your phone and other electronic devices out of reach. Set up your webcam so that we can see your hands at all times.
 
+<center><img src="../assets/images/hands.png" width=500></center>
+
 - We will display questions on the screen one at a time and give you time to answer each question. Once we move along to display the next question, we will not go back to previous questions. You will write your answer to each question on blank paper. You will not be able to navigate through the exam yourself, which means you should not touch your computer while the exam is in session. 
 
 - After the exam, we will ask some students to meet for brief oral exams. If we see anything suspicious in your behavior while taking the exam or we notice anything unusual on your exam submission, we will ask you to meet. We will also randomly select students for oral exams, to use as "controls", so it is not necessarily something to be concerned about if we do request an oral exam.
