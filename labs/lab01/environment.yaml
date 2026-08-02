@@ -8,5 +8,6 @@ dependencies:
     - notebook
     - nb_conda_kernels
     - ipython==8.30.0
+    - setuptools<81
     - pip:
         - -r requirements.txt
