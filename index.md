@@ -14,8 +14,9 @@ nav_order: 1
 
 {{ site.staffersnobio }}
 
-{: .warning }
-This site is **under construction**. Anything you read here is not finalized. This disclaimer will be removed when the site is ready for Summer 2026.
+
+{: .success }
+Welcome to DSC 10! Make sure to read this website thoroughly and complete the items in the [Getting Started](https://dsc-courses.github.io/dsc80-2026-su/syllabus/#getting-started-) section of the syllabus. 
 
 [Jump to the current week](#{{ site.modules.first.title | slugify }}){: .btn data-current-week-link="" }
 [Welcome Survey]({{ site.urls.welcome }}){: .btn }
