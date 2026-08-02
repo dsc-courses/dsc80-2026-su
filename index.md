@@ -16,7 +16,7 @@ nav_order: 1
 
 
 {: .success }
-Welcome to DSC 10! Make sure to read this website thoroughly and complete the items in the [Getting Started](https://dsc-courses.github.io/dsc80-2026-su/syllabus/#getting-started-) section of the syllabus. 
+Welcome to DSC 80! Make sure to read this website thoroughly and complete the items in the [Getting Started](https://dsc-courses.github.io/dsc80-2026-su/syllabus/#getting-started-) section of the syllabus. To join remote lecture, click the Zoom link from within Canvas.
 
 [Jump to the current week](#{{ site.modules.first.title | slugify }}){: .btn data-current-week-link="" }
 [Welcome Survey]({{ site.urls.welcome }}){: .btn }
