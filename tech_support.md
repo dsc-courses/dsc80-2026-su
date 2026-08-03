@@ -77,7 +77,7 @@ The way to do this depends on whether you're on a Unix-like platform (macOS or L
     ```
     conda init
     ```
-4. **Close and reopen the Miniforge Prompt.** This step is important — the changes made by `conda init` won't take effect in the terminal window you ran it in.
+4. Close the Miniforge Prompt and open the Windows Command Prompt to use as your terminal for the remaining instructions.
 
 
 ### Step 2: Download [`environment.yml`]({{site.urls.environment}})
