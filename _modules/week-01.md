@@ -8,6 +8,7 @@ days:
     type: lecture
     title: Introduction, Data Science Lifecycle
     reading: '[Ch. 1](https://learningds.org/ch/01/lifecycle_intro.html)'
+    html: resources/lectures/lec01/lec01.html
 - date: '2026-08-04'
   events:
   - name: LEC 2
