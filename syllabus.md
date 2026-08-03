@@ -101,7 +101,7 @@ post instead.**
 
 ### Lectures
 
-Lectures will be held remotely on Zoom, Monday through Thursday, 9:30-10:50AM. In-person attendance can earn you some credit for the [Engagement](#engagement) portion of your grade but is not strictly required.
+Lectures will be held remotely on Zoom, Monday through Thursday, 9:30-10:50AM. You can find the Zoom link on Canvas. In-person attendance can earn you some credit for the [Engagement](#engagement) portion of your grade but is not strictly required.
 
 Lecture notebooks will be your main resource in this class. You can access them,
 along with all course materials, by pulling from the [course GitHub
@@ -208,7 +208,7 @@ office hours and study groups.
 ### Office Hours
 
 To get help on assignments and concepts, course staff will be hosting several
-office hours per week. All office hours will be held remotely on Zoom. We encourage you to attend and work on assignments there. See the
+office hours per week. All office hours will be held remotely on Zoom. You can find the Zoom link on Canvas. We encourage you to attend and work on assignments there. See the
 [Calendar](../calendar) tab of the course website for the schedule.
 
 {: .warning}
