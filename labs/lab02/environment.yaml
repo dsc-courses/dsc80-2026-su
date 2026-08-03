@@ -1,0 +1,13 @@
+name: otter-env
+channels:
+    - defaults
+    - conda-forge
+dependencies:
+    - python=3.12
+    - pip
+    - notebook
+    - nb_conda_kernels
+    - ipython==8.30.0
+    - setuptools<81
+    - pip:
+        - -r requirements.txt
