@@ -72,12 +72,12 @@ The way to do this depends on whether you're on a Unix-like platform (macOS or L
 
 **Windows**:
 1. Download the Windows install script from [here](https://github.com/conda-forge/miniforge?tab=readme-ov-file#windows). The file should be named `Miniforge3-Windows-x86_64.exe`.
-2. Run the downloaded `.exe` file. Follow the prompts, taking note of the options to "Create start menu shortcut" and "Add Miniforge3 to my PATH environment variable". The latter is not selected by default, but you will want to select it. This allows you to easily run `mamba` commands from from terminals other than the just-installed Miniforge Prompt.
+2. Run the downloaded `.exe` file. Follow the prompts, selecting the options to "Create shortcuts", "Add Miniforge3 to my PATH environment variable", and "Clear package cache upon completion". Note that adding Miniforge2 to the PATH will generate a warning which you can ignore. We want to select this because it allows you to easily run `mamba` commands from terminals other than the freshly-installed Miniforge Prompt. 
 3. From the Start Menu, open the Miniforge Prompt and run:
     ```
-    mamba init
+    conda init
     ```
-4. **Close and reopen your terminal.** This step is important — the changes made by `mamba init` won't take effect in the terminal window you ran it in.
+4. **Close and reopen the Miniforge Prompt.** This step is important — the changes made by `mamba init` won't take effect in the terminal window you ran it in.
 
 
 ### Step 2: Download [`environment.yml`]({{site.urls.environment}})
