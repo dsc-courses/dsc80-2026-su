@@ -2,7 +2,6 @@
 name: Elyse Wong
 role: Tutor
 pronouns: She/her
-email: elw018@ucsd.edu
 photo: /assets/staff-images/wong-elyse.jpg
 description: 3rd year, Data Science + Business Economics Major, Cog Sci Minor
 hometown: Diamond Bar, CA
