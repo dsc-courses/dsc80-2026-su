@@ -15,6 +15,7 @@ days:
     type: lecture
     title: DataFrame Fundamentals
     reading: '[Ch. 6, 6.1](https://learningds.org/ch/06/pandas_intro.html)'
+    html: resources/lectures/lec02/lec02.html
   - name: LAB 1
     type: lab
     title: Python, NumPy, and Pandas
