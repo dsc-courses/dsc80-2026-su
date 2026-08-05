@@ -27,6 +27,7 @@ days:
     type: lecture
     title: Aggregating
     reading: '[Ch. 6.2](https://learningds.org/ch/06/pandas_aggregating.html)'
+    html: resources/lectures/lec03/lec03.html
   - name: PROJ 1
     type: proj
     title: Checkpoint - Gradebook 💯
