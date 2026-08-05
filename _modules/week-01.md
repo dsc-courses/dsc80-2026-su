@@ -30,6 +30,7 @@ days:
   - name: PROJ 1
     type: proj
     title: Checkpoint - Gradebook 💯
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/projects/proj01
     reading: ''
 - date: '2026-08-06'
   events:
@@ -48,5 +49,6 @@ days:
   - name: PROJ 1
     type: proj
     title: Gradebook 💯
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/projects/proj01
     reading: ''
 ---
