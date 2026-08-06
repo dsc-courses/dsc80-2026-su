@@ -39,6 +39,7 @@ days:
     type: lecture
     title: Simpson's Paradox, Joining, Transforming
     reading: '[Ch. 6.3-6.5](https://learningds.org/ch/06/pandas_joining.html)'
+    html: resources/lectures/lec04/lec04.html
 - date: '2026-08-07'
   events:
   - name: LAB 2
