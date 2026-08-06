@@ -44,6 +44,7 @@ days:
   - name: LAB 2
     type: lab
     title: DataFrames and Grouping
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/labs/lab02
     reading: ''
 - date: '2026-08-08'
   events:
