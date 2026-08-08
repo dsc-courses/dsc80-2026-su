@@ -28,6 +28,7 @@ days:
   - name: PROJ 2
     type: proj
     title: Checkpoint - Loans 💸
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/projects/proj02
     reading: ''
 - date: '2026-08-13'
   events:
@@ -40,11 +41,13 @@ days:
   - name: LAB 4
     type: lab
     title: Hypothesis and Permutation Testing
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/labs/lab04
     reading: '[Ch. 17](https://learningds.org/ch/17/inf_pred_gen_intro.html)'
 - date: '2026-08-15'
   events:
   - name: PROJ 2
     type: proj
     title: Loans 💸
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/projects/proj02
     reading: ''
 ---
