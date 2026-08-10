@@ -8,6 +8,7 @@ days:
     type: lecture
     title: Exploring and Cleaning Data
     reading: '[Ch. 9](https://learningds.org/ch/09/wrangling_intro.html) and [10](https://learningds.org/ch/10/eda_intro.html)'
+    html: resources/lectures/lec05/lec05.html
   - name: LAB 3
     type: lab
     title: Merging and Pivoting
