@@ -20,6 +20,7 @@ days:
     type: lecture
     title: Hypothesis and Permutation Testing
     reading: '[Ch. 17](https://learningds.org/ch/17/inf_pred_gen_intro.html)'
+    review: resources/lectures/lec06/review.html
     html: resources/lectures/lec06/lec06.html
 - date: '2026-08-12'
   events:
