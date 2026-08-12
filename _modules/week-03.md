@@ -11,6 +11,7 @@ days:
   - name: LAB 5
     type: lab
     title: Missing Values and Imputation
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/labs/lab05
     reading: ''
 - date: '2026-08-18'
   events:
@@ -39,6 +40,7 @@ days:
   - name: LAB 6
     type: lab
     title: APIs and Web Scraping
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/labs/lab06
     reading: ''
 - date: '2026-08-22'
   events:
