@@ -28,6 +28,8 @@ days:
     type: lecture
     title: Missingness Mechanisms
     reading: '[A1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4121561/), [A2](https://stefvanbuuren.name/fimd/sec-MCAR.html)'
+    extra: resources/lectures/lec07/lec07-fast-permutation-tests.html
+    html: resources/lectures/lec07/lec07.html
   - name: PROJ 2
     type: proj
     title: Checkpoint - Loans 💸
