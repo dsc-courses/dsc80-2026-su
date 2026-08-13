@@ -41,6 +41,7 @@ days:
     type: lecture
     title: Imputation
     reading: '[DSP 6.3-6.5](https://notes.dsc80.com/content/06/handling-missing-data.html)'
+    html: resources/lectures/lec08/lec08.html
 - date: '2026-08-14'
   events:
   - name: LAB 4
