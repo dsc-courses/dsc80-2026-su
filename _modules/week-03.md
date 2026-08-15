@@ -29,6 +29,7 @@ days:
     type: exam
     title: Midterm Exam
     reading: ''
+    guide: resources/other/guide.pdf
 - date: '2026-08-20'
   events:
   - name: LEC 12
