@@ -15,8 +15,8 @@ nav_order: 1
 {{ site.staffersnobio }}
 
 
-{: .success }
-Welcome to DSC 80! Make sure to read this website thoroughly and complete the items in the [Getting Started](https://dsc-courses.github.io/dsc80-2026-su/syllabus/#getting-started-) section of the syllabus. To join remote lecture, click the Zoom link from within Canvas.
+{: .note }
+The Midterm Exam is this Wednesday, August 19th from 2-3:50 PM. [This document](resources/other/guide.pdf) has important information and instructions you should be aware of!
 
 [Jump to the current week](#{{ site.modules.first.title | slugify }}){: .btn data-current-week-link="" }
 [Welcome Survey]({{ site.urls.welcome }}){: .btn }
