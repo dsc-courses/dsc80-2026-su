@@ -8,6 +8,7 @@ days:
     type: lecture
     title: HTTP Basics
     reading: '[Ch. 14.2-14.4](https://learningds.org/ch/14/web_json.html)'
+    html: resources/lectures/lec09/lec09.html
   - name: LAB 5
     type: lab
     title: Missing Values and Imputation
