@@ -28,7 +28,7 @@ days:
     title: Midterm Review
     reading: ''
     practice_pdf: resources/exam_preparation/practice.pdf
-    practice_ipynb: resources/exam_preparation/practice.ipynb
+    practice_ipynb: https://github.com/dsc-courses/dsc80-2026-su/blob/main/exam_preparation/practice.ipynb
   - name: EXAM
     type: exam
     title: Midterm Exam
