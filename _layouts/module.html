@@ -50,12 +50,16 @@
                 <small{% if event.practice_pdf or event.practice_ipynb %} style="margin-right: 8px;"{% endif %}><a href="{{ event.html }}"><button type="button" class="btn btn-info">📝 write</button></a></small>
                 {%- endif -%}
 
-                {%- if event.practice_pdf -%}
-                <small style="margin-right: 8px;"><a href="{{ event.practice_pdf }}"><button type="button" class="btn btn-info">📄 practice pdf</button></a></small>
+                {%- if event.practice -%}
+                <small style="margin-right: 8px;"><a href="{{ event.practice }}"><button type="button" class="btn btn-info">📄 practice</button></a></small>
                 {%- endif -%}
 
-                {%- if event.practice_ipynb -%}
-                <small><a href="{{ event.practice_ipynb }}"><button type="button" class="btn btn-info">📓 practice ipynb</button></a></small>
+                {%- if event.solutions -%}
+                <small style="margin-right: 8px;"><a href="{{ event.solutions }}"><button type="button" class="btn btn-info">📄 solutions</button></a></small>
+                {%- endif -%}
+
+                {%- if event.notebook -%}
+                <small><a href="{{ event.notebook }}"><button type="button" class="btn btn-info">notebook</button></a></small>
                 {%- endif -%}
 
                 {%- if event.podcast -%}
