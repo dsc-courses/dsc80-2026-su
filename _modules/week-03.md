@@ -50,5 +50,6 @@ days:
   - name: LAB 7
     type: lab
     title: Regular Expressions
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/labs/lab07
     reading: '[Ch. 13](https://learningds.org/ch/13/text_intro.html)'
 ---

@@ -11,6 +11,7 @@ days:
   - name: PROJ 3
     type: proj
     title: Checkpoint - Language Models 🗣
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/projects/proj03
     reading: ''
 - date: '2026-08-25'
   events:
@@ -27,6 +28,7 @@ days:
   - name: PROJ 3
     type: proj
     title: Language Models 🗣
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/projects/proj03
     reading: ''
 - date: '2026-08-27'
   events:
