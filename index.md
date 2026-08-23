@@ -15,8 +15,8 @@ nav_order: 1
 {{ site.staffersnobio }}
 
 
-{: .note }
-The Midterm Exam is this Wednesday, August 19th from 2-3:50 PM. [This document](resources/other/guide.pdf) has important information and instructions you should be aware of! We'll have a trial run on Monday after lecture so you can make sure you are comfortable with the exam-taking process.
+<!--{: .note }
+The Midterm Exam is this Wednesday, August 19th from 2-3:50 PM. [This document](resources/other/guide.pdf) has important information and instructions you should be aware of! We'll have a trial run on Monday after lecture so you can make sure you are comfortable with the exam-taking process.-->
 
 [Jump to the current week](#{{ site.modules.first.title | slugify }}){: .btn data-current-week-link="" }
 [Welcome Survey]({{ site.urls.welcome }}){: .btn }

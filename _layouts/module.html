@@ -50,6 +50,10 @@
                 <small{% if event.practice_pdf or event.practice_ipynb %} style="margin-right: 8px;"{% endif %}><a href="{{ event.html }}"><button type="button" class="btn btn-info">📝 write</button></a></small>
                 {%- endif -%}
 
+                {%- if event.exam -%}
+                <small style="margin-right: 8px;"><a href="{{ event.exam }}"><button type="button" class="btn btn-info">📄 exam</button></a></small>
+                {%- endif -%}
+
                 {%- if event.practice -%}
                 <small style="margin-right: 8px;"><a href="{{ event.practice }}"><button type="button" class="btn btn-info">📄 practice</button></a></small>
                 {%- endif -%}
