@@ -3,34 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>lec13</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script>
-(function() {
-  function addWidgetsRenderer() {
-    var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
-    var scriptElement = document.createElement('script');
-    
-    var widgetRendererSrc = 'https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js';
-    
-    var widgetState;
-
-    // Fallback for older version:
-    try {
-      widgetState = mimeElement && JSON.parse(mimeElement.innerHTML);
-
-      if (widgetState && (widgetState.version_major < 2 || !widgetState.version_major)) {
-        
-        var widgetRendererSrc = 'https://unpkg.com/@jupyter-js-widgets@*/dist/embed.js';
-        
-      }
-    } catch(e) {}
-
-    scriptElement.src = widgetRendererSrc;
-    document.body.appendChild(scriptElement);
-  }
-
-  document.addEventListener('DOMContentLoaded', addWidgetsRenderer);
-}());
-</script>
+<title>lec13</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7544,7 +7517,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">dsc80_utils</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">dsc80_utils</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 </div>
 </div>
@@ -8642,11 +8615,11 @@ Name: Job Title, Length: 6537, dtype: object</pre>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>5118                sanitation driver
-10989                         cashier
-14007               management intern
-7147     associate management analyst
-3847      information systems analyst
+<pre>14308              pool guard
+5990      plumbing supervisor
+135      deputy city attorney
+11094       library assistant
+11610    power plant operator
 Name: Job Title, dtype: object</pre>
 </div>
 </div>
@@ -8892,13 +8865,13 @@ Name: Job Title, Length: 34583, dtype: object</pre>
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Job Title
-police           2174
-officer          1570
-assistant        1345
-                 ... 
-establishment       1
-discharge           1
-medical             1
+police         2174
+officer        1570
+assistant      1345
+               ... 
+ltd               1
+termed            1
+participant       1
 Name: count, Length: 346, dtype: int64</pre>
 </div>
 </div>
@@ -8922,7 +8895,7 @@ Name: count, Length: 346, dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>For each of the 330 unique words that are used in job titles, we can count the number of occurrences of the word in each job title.</p>
+<p>For each of the unique words that are used in job titles, we can count the number of occurrences of the word in each job title.</p>
 <ul>
 <li><code>'deputy fire chief'</code> contains the word <code>'deputy'</code> once, the word <code>'fire'</code> once, and the word <code>'chief'</code> once.</li>
 <li><code>'assistant managers assistant'</code> contains the word <code>'assistant'</code> twice and the word <code>'managers'</code> once.</li>
@@ -8994,10 +8967,10 @@ Name: count, Length: 346, dtype: int64</pre>
 <th>assistant</th>
 <th>engineer</th>
 <th>...</th>
-<th>business</th>
-<th>establishment</th>
-<th>discharge</th>
-<th>medical</th>
+<th>warehouse</th>
+<th>ltd</th>
+<th>termed</th>
+<th>participant</th>
 </tr>
 <tr>
 <th>Job Title</th>
@@ -9115,7 +9088,6 @@ Name: count, Length: 346, dtype: int64</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><code>counts_df</code> has one row for each employee, and one column for each unique word that is used in a job title.</p>
-<p>Its third row, for example, tells us that the third job title contains <code>'police'</code> once and <code>'assistant'</code> once.</p>
 </div>
 </div>
 </div>
@@ -9234,13 +9206,13 @@ Name: count, Length: 346, dtype: int64</pre>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>police           0
-officer          0
-assistant        0
-                ..
-establishment    0
-discharge        0
-medical          0
+<pre>police         0
+officer        0
+assistant      0
+              ..
+ltd            0
+termed         0
+participant    0
 Name: deputy fire chief, Length: 346, dtype: int64</pre>
 </div>
 </div>
@@ -9268,13 +9240,13 @@ Name: deputy fire chief, Length: 346, dtype: int64</pre>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>police           0
-officer          0
-assistant        0
-                ..
-establishment    0
-discharge        0
-medical          0
+<pre>police         0
+officer        0
+assistant      0
+              ..
+ltd            0
+termed         0
+participant    0
 Name: fire battalion chief, Length: 346, dtype: int64</pre>
 </div>
 </div>
@@ -10033,7 +10005,7 @@ Name: count, Length: 12, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sim_pair</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">sim_pair</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">s2</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -10243,41 +10215,21 @@ $$</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0fef7a95">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b9329c9e-3b1f-4f7f-8bd2-47d8df9a31eb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li><strong>Example</strong>: What is the term frequency of "billy" in the following document?</li>
+<li><strong>Example</strong>: What is the term frequency of "basket" in the following document?</li>
 </ul>
 <center>"at the last game, the team scored <b>basket</b> after <b>basket</b>"</center><br/>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b80c6b4c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li><strong>Answer</strong>: $\frac{2}{10} = \frac15$.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ff48fdf0">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<li><p><strong>Answer</strong>: $\frac{2}{10} = \frac15$.</p>
+</li>
+<li><p>Intuition: Words that occur often within a document are important to the document's meaning.</p>
 <ul>
-<li>Intuition: Words that occur often within a document are important to the document's meaning.<ul>
 <li>If $\text{tf}(t, d)$ is large, then word $t$ occurs often in $d$.</li>
 <li>If $\text{tf}(t, d)$ is small, then word $t$ does not occur often $d$.</li>
 </ul>
@@ -11155,7 +11107,7 @@ dtype: object</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 <span class="n">inaug_txt</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">'data'</span><span class="p">)</span> <span class="o">/</span> <span class="s1">'inaugural_addresses.txt'</span>
 <span class="n">inaug</span> <span class="o">=</span> <span class="n">inaug_txt</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8'</span><span class="p">)</span>
 </pre></div>
@@ -11530,8 +11482,8 @@ Thank you. God bless America. Thank you all. Thank you. Thank you very much. Tha
 <div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
-<span class="k">def</span> <span class="nf">extract_struct</span><span class="p">(</span><span class="n">speech</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">extract_struct</span><span class="p">(</span><span class="n">speech</span><span class="p">):</span>
     <span class="n">L</span> <span class="o">=</span> <span class="n">speech</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="n">maxsplit</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
     <span class="n">L</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">L</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'’'</span><span class="p">,</span> <span class="s2">"'"</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'‘'</span><span class="p">,</span> <span class="s2">"'"</span><span class="p">)</span>   <span class="c1"># standardize curly vs straight apostrophes</span>
     <span class="n">L</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">"[^A-Za-z' ]"</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="n">L</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
@@ -11798,9 +11750,8 @@ Thank you. God bless America. Thank you all. Thank you. Thank you very much. Tha
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Index(['the', 'of', 'and', 'to', 'in', 'a', 'our', 'we', 'that', 'be',
        ...
-       'asiatic', 'governs', 'amalgamated', 'prohibitory', 'clauses',
-       'arraignment', 'predominating', 'outbursts', 'foreigners',
-       'intimidated'],
+       'businessman', 'tomb', 'crossed', 'scaled', 'braved', 'untold',
+       'unpredictable', 'admired', 'goodwill', 'houston'],
       dtype='object', name='contents', length=9364)</pre>
 </div>
 </div>
@@ -11825,7 +11776,7 @@ Thank you. God bless America. Thank you all. Thank you. Thank you very much. Tha
 <div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tqdm.notebook</span> <span class="kn">import</span> <span class="n">tqdm</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">tqdm.notebook</span><span class="w"> </span><span class="kn">import</span> <span class="n">tqdm</span>
 
 <span class="n">tfidf_dict</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">tf_denom</span> <span class="o">=</span> <span class="n">speeches_df</span><span class="p">[</span><span class="s1">'contents'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">()</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">len</span><span class="p">()</span>
@@ -11847,13 +11798,8 @@ Thank you. God bless America. Thank you all. Thank you. Thank you very much. Tha
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jupyter-widgets jp-OutputArea-output" id="f326d031-02e8-4b6f-aac3-dc57da0b1644" tabindex="0">
-<script type="text/javascript">
-var element = document.getElementById('f326d031-02e8-4b6f-aac3-dc57da0b1644');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "38febf1391c044ffb8dc50b369840c68", "version_major": 2, "version_minor": 0}
-</script>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>  0%|          | 0/9364 [00:00&lt;?, ?it/s]</pre>
 </div>
 </div>
 </div>
@@ -11903,15 +11849,15 @@ var element = document.getElementById('f326d031-02e8-4b6f-aac3-dc57da0b1644');
 <th>and</th>
 <th>to</th>
 <th>...</th>
-<th>predominating</th>
-<th>outbursts</th>
-<th>foreigners</th>
-<th>intimidated</th>
+<th>unpredictable</th>
+<th>admired</th>
+<th>goodwill</th>
+<th>houston</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th>15</th>
+<th>12</th>
 <td>0.0</td>
 <td>0.0</td>
 <td>0.0</td>
@@ -11923,43 +11869,7 @@ var element = document.getElementById('f326d031-02e8-4b6f-aac3-dc57da0b1644');
 <td>0.0</td>
 </tr>
 <tr>
-<th>31</th>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>...</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr>
-<th>8</th>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>...</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr>
-<th>18</th>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>...</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr>
-<th>9</th>
+<th>40</th>
 <td>0.0</td>
 <td>0.0</td>
 <td>0.0</td>
@@ -11972,6 +11882,42 @@ var element = document.getElementById('f326d031-02e8-4b6f-aac3-dc57da0b1644');
 </tr>
 <tr>
 <th>4</th>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>...</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>56</th>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>...</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>49</th>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>...</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>0</th>
 <td>0.0</td>
 <td>0.0</td>
 <td>0.0</td>
@@ -12034,13 +11980,13 @@ var element = document.getElementById('f326d031-02e8-4b6f-aac3-dc57da0b1644');
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>0     providential
-1           arrive
-2         pleasing
-          ...     
-57         america
-58           story
-59           thank
+<pre>0     immutable
+1        arrive
+2      pleasing
+        ...    
+57      america
+58        story
+59        thank
 Length: 60, dtype: object</pre>
 </div>
 </div>
@@ -12065,7 +12011,7 @@ Length: 60, dtype: object</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">ten_largest</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">ten_largest</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
     <span class="k">return</span> <span class="s1">', '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">argsort</span><span class="p">()][</span><span class="o">-</span><span class="mi">10</span><span class="p">:])</span>
 </pre></div>
 </div>
@@ -12140,19 +12086,19 @@ Length: 60, dtype: object</pre>
 <th>0</th>
 <td>Washington</td>
 <td>1789</td>
-<td>pecuniary, article, deliberations, rendered, your, peculiarly, qualifications, impressions, immutable, providential</td>
+<td>article, deliberations, rendered, pecuniary, your, peculiarly, qualifications, immutable, impressions, providential</td>
 </tr>
 <tr>
 <th>1</th>
 <td>Washington</td>
 <td>1793</td>
-<td>besides, violated, witnesses, injunctions, knowingly, previous, willingly, incurring, arrive, upbraidings</td>
+<td>besides, injunctions, violated, knowingly, witnesses, previous, incurring, willingly, arrive, upbraidings</td>
 </tr>
 <tr>
 <th>2</th>
 <td>Adams</td>
 <td>1797</td>
-<td>preference, esteem, benevolence, legislature, habitual, amiable, virtuous, houses, legislatures, pleasing</td>
+<td>benevolence, preference, esteem, legislature, amiable, habitual, virtuous, houses, legislatures, pleasing</td>
 </tr>
 <tr>
 <th>3</th>
@@ -12164,31 +12110,31 @@ Length: 60, dtype: object</pre>
 <th>4</th>
 <td>Jefferson</td>
 <td>1805</td>
-<td>press, expenses, comforts, licentiousness, enlighten, falsehood, defamation, covered, false, whatsoever</td>
+<td>press, expenses, comforts, licentiousness, defamation, enlighten, falsehood, covered, false, whatsoever</td>
 </tr>
 <tr>
 <th>5</th>
 <td>Madison</td>
 <td>1809</td>
-<td>inexpressibly, impression, wasteful, devout, manners, exempted, aliment, rendered, belligerent, improvements</td>
+<td>rage, indulging, trespass, impression, assertions, fulfilling, invade, rendered, belligerent, improvements</td>
 </tr>
 <tr>
 <th>6</th>
 <td>Madison</td>
 <td>1813</td>
-<td>render, element, enemy, until, savage, captives, prisoners, cruel, massacre, british</td>
+<td>element, render, enemy, until, captives, prisoners, cruel, savage, massacre, british</td>
 </tr>
 <tr>
 <th>7</th>
 <td>Monroe</td>
 <td>1817</td>
-<td>dangers, connected, dependent, duly, lakes, situated, invasion, put, naval, trials</td>
+<td>dangers, connected, dependent, situated, duly, lakes, invasion, put, naval, trials</td>
 </tr>
 <tr>
 <th>8</th>
 <td>Monroe</td>
 <td>1821</td>
-<td>river, revenue, term, colonies, coast, fortifications, occurrences, concluded, preceding, spain</td>
+<td>river, revenue, term, colonies, coast, fortifications, preceding, spain, occurrences, concluded</td>
 </tr>
 <tr>
 <th>9</th>
@@ -12200,25 +12146,25 @@ Length: 60, dtype: object</pre>
 <th>10</th>
 <td>Jackson</td>
 <td>1829</td>
-<td>counteract, profuse, introduction, appropriation, climes, accountability, worth, defending, generally, diffidence</td>
+<td>mercifully, confederate, transcending, confound, customary, accountability, worth, defending, generally, diffidence</td>
 </tr>
 <tr>
 <th>11</th>
 <td>Jackson</td>
 <td>1833</td>
-<td>incalculable, impressed, necessarily, exercise, intentions, preservation, union, constitutionally, proportion, inculcate</td>
+<td>victorious, necessarily, impressed, exercise, intentions, preservation, union, constitutionally, inculcate, proportion</td>
 </tr>
 <tr>
 <th>12</th>
 <td>VanBuren</td>
 <td>1837</td>
-<td>opinions, foreboding, evidently, unequaled, designed, adherence, actual, occasionally, institutions, supposed</td>
+<td>opinions, unequaled, evidently, foreboding, designed, adherence, actual, occasionally, institutions, supposed</td>
 </tr>
 <tr>
 <th>13</th>
 <td>Harrison</td>
 <td>1841</td>
-<td>judiciary, used, constitution, aristocracy, remark, operations, conceive, executive, grant, roman</td>
+<td>veto, used, constitution, remark, aristocracy, operations, conceive, executive, grant, roman</td>
 </tr>
 <tr>
 <th>14</th>
@@ -12230,31 +12176,31 @@ Length: 60, dtype: object</pre>
 <th>15</th>
 <td>Taylor</td>
 <td>1849</td>
-<td>onerous, loves, prerequisites, harmonize, doctrines, assuage, conflicting, affections, vested, purity</td>
+<td>bestowal, surrounded, ambassadors, diligently, loftiest, loves, conflicting, affections, purity, vested</td>
 </tr>
 <tr>
 <th>16</th>
 <td>Pierce</td>
 <td>1853</td>
-<td>jurisdiction, position, readily, counsels, apparent, regarded, consult, preferment, your, hardly</td>
+<td>entirely, position, readily, counsels, apparent, regarded, preferment, consult, your, hardly</td>
 </tr>
 <tr>
 <th>17</th>
 <td>Buchanan</td>
 <td>1857</td>
-<td>possessions, convinced, slavery, speedily, kansas, squandering, question, agitation, territory, whilst</td>
+<td>convinced, possessions, slavery, speedily, squandering, kansas, question, agitation, territory, whilst</td>
 </tr>
 <tr>
 <th>18</th>
 <td>Lincoln</td>
 <td>1861</td>
-<td>dissatisfied, expressly, plainly, union, surrendered, lawfully, case, minority, secede, clause</td>
+<td>fugitive, expressly, plainly, union, surrendered, lawfully, case, minority, secede, clause</td>
 </tr>
 <tr>
 <th>19</th>
 <td>Lincoln</td>
 <td>1865</td>
-<td>malice, widow, address, altogether, slaves, answered, wills, offense, woe, offenses</td>
+<td>wringing, ascribe, address, altogether, answered, slaves, offense, wills, woe, offenses</td>
 </tr>
 <tr>
 <th>20</th>
@@ -12266,13 +12212,13 @@ Length: 60, dtype: object</pre>
 <th>21</th>
 <td>Grant</td>
 <td>1873</td>
-<td>reformation, extension, him, steam, extermination, telegraph, proposition, santo, transit, domingo</td>
+<td>reformation, extension, him, steam, extermination, telegraph, proposition, domingo, santo, transit</td>
 </tr>
 <tr>
 <th>22</th>
 <td>Hayes</td>
 <td>1877</td>
-<td>emancipated, serves, parties, repeat, races, reform, complications, nomination, dispute, behalf</td>
+<td>emancipated, furtherance, parties, repeat, races, reform, nomination, complications, dispute, behalf</td>
 </tr>
 <tr>
 <th>23</th>
@@ -12284,13 +12230,13 @@ Length: 60, dtype: object</pre>
 <th>24</th>
 <td>Cleveland</td>
 <td>1885</td>
-<td>claims, amity, people's, application, appreciation, strife, commended, extravagance, partisan, yours</td>
+<td>amity, claims, people's, application, appreciation, strife, commended, extravagance, partisan, yours</td>
 </tr>
 <tr>
 <th>25</th>
 <td>Harrison</td>
 <td>1889</td>
-<td>commercial, offices, electors, list, cotton, laws, friendly, european, methods, ballot</td>
+<td>commercial, offices, list, cotton, electors, laws, friendly, european, methods, ballot</td>
 </tr>
 <tr>
 <th>26</th>
@@ -12302,37 +12248,37 @@ Length: 60, dtype: object</pre>
 <th>27</th>
 <td>McKinley</td>
 <td>1897</td>
-<td>convene, revival, marine, merchant, session, legislation, congress, revision, revenue, loans</td>
+<td>merchant, revival, marine, convene, session, legislation, congress, revision, revenue, loans</td>
 </tr>
 <tr>
 <th>28</th>
 <td>McKinley</td>
 <td>1901</td>
-<td>intervention, permanence, advised, executive, preparation, instructions, philippine, inhabitants, islands, cuba</td>
+<td>advised, fast, intervention, executive, preparation, instructions, philippine, inhabitants, islands, cuba</td>
 </tr>
 <tr>
 <th>29</th>
 <td>Roosevelt</td>
 <td>1905</td>
-<td>outgrown, intense, shirk, conditions, heritage, faced, tasks, problems, aright, regards</td>
+<td>unwasted, manlier, hardier, conditions, heritage, faced, tasks, problems, aright, regards</td>
 </tr>
 <tr>
 <th>30</th>
 <td>Taft</td>
 <td>1909</td>
-<td>amendment, bill, canal, employees, south, type, tariff, business, negro, interstate</td>
+<td>amendment, bill, employees, canal, south, type, tariff, business, negro, interstate</td>
 </tr>
 <tr>
 <th>31</th>
 <td>Wilson</td>
 <td>1913</td>
-<td>comprehend, intimate, interpret, men's, sweep, safeguarding, inconceivable, familiar, stirred, studied</td>
+<td>comprehend, interpret, intimate, men's, safeguarding, sweep, inconceivable, studied, stirred, familiar</td>
 </tr>
 <tr>
 <th>32</th>
 <td>Wilson</td>
 <td>1917</td>
-<td>immediate, action, processes, drawn, politics, despite, currents, singular, counsel, wished</td>
+<td>immediate, action, processes, politics, drawn, despite, currents, singular, counsel, wished</td>
 </tr>
 <tr>
 <th>33</th>
@@ -12344,25 +12290,25 @@ Length: 60, dtype: object</pre>
 <th>34</th>
 <td>Coolidge</td>
 <td>1925</td>
-<td>deliverance, conditions, save, ought, unless, property, tax, stands, array, represents</td>
+<td>financing, conditions, save, ought, unless, property, tax, stands, array, represents</td>
 </tr>
 <tr>
 <th>35</th>
 <td>Hoover</td>
 <td>1929</td>
-<td>reorganization, officials, criminals, mandates, amendment, controversies, liquor, ideals, eighteenth, enforcement</td>
+<td>criminals, reorganization, officials, mandates, controversies, amendment, liquor, ideals, eighteenth, enforcement</td>
 </tr>
 <tr>
 <th>36</th>
 <td>Roosevelt</td>
 <td>1933</td>
-<td>recovery, critical, changers, languishes, emergency, respects, discipline, stricken, leadership, helped</td>
+<td>recovery, changers, languishes, critical, discipline, emergency, respects, stricken, leadership, helped</td>
 </tr>
 <tr>
 <th>37</th>
 <td>Roosevelt</td>
 <td>1937</td>
-<td>despair, millions, road, aught, timidity, opportunism, epidemics, ruthless, democracy, paint</td>
+<td>despair, millions, road, opportunism, epidemics, ruthless, aught, timidity, democracy, paint</td>
 </tr>
 <tr>
 <th>38</th>
@@ -12374,7 +12320,7 @@ Length: 60, dtype: object</pre>
 <th>39</th>
 <td>Roosevelt</td>
 <td>1945</td>
-<td>manger, stout, anguished, untroubled, gain, upward, mistakes, test, trend, learned</td>
+<td>stout, faintness, schoolmaster, downward, gain, upward, mistakes, test, trend, learned</td>
 </tr>
 <tr>
 <th>40</th>
@@ -12398,19 +12344,19 @@ Length: 60, dtype: object</pre>
 <th>43</th>
 <td>Kennedy</td>
 <td>1961</td>
-<td>forebears, negotiate, finished, pledge, final, dare, let, both, explore, sides</td>
+<td>finished, negotiate, deeds, pledge, dare, final, let, both, explore, sides</td>
 </tr>
 <tr>
 <th>44</th>
 <td>Johnson</td>
 <td>1965</td>
-<td>stranger, trying, mars, span, harvest, shoulder, rocket, change, mastery, covenant</td>
+<td>believers, trying, span, mars, harvest, rocket, shoulder, change, mastery, covenant</td>
 </tr>
 <tr>
 <th>45</th>
 <td>Nixon</td>
 <td>1969</td>
-<td>celebrate, wanting, caught, worlds, reaches, riders, third, brothers, rhetoric, voices</td>
+<td>celebrate, wanting, worlds, caught, reaches, riders, third, brothers, rhetoric, voices</td>
 </tr>
 <tr>
 <th>46</th>
@@ -12422,25 +12368,25 @@ Length: 60, dtype: object</pre>
 <th>47</th>
 <td>Carter</td>
 <td>1977</td>
-<td>remembered, together, mercy, bible, built, mistakes, enhance, thee, dream, micah</td>
+<td>basic, together, mercy, bible, built, enhance, mistakes, thee, dream, micah</td>
 </tr>
 <tr>
 <th>48</th>
 <td>Reagan</td>
 <td>1981</td>
-<td>row, penalizes, markers, crosses, memorial, monument, americans, productivity, weapon, heroes</td>
+<td>crosses, memorial, markers, row, monument, penalizes, americans, productivity, weapon, heroes</td>
 </tr>
 <tr>
 <th>49</th>
 <td>Reagan</td>
 <td>1985</td>
-<td>echoes, wouldn't, kill, soviets, reduce, song, budget, senator, weapons, nuclear</td>
+<td>started, echoes, soviets, wouldn't, reduce, song, budget, senator, weapons, nuclear</td>
 </tr>
 <tr>
 <th>50</th>
 <td>Bush</td>
 <td>1989</td>
-<td>friends, mr, engagement, crucial, word, blowing, other's, door, don't, breeze</td>
+<td>friends, mr, crucial, engagement, word, blowing, other's, door, don't, breeze</td>
 </tr>
 <tr>
 <th>51</th>
@@ -12458,13 +12404,13 @@ Length: 60, dtype: object</pre>
 <th>53</th>
 <td>Bush</td>
 <td>2001</td>
-<td>commitment, angel, compassion, rides, whirlwind, directs, stakes, affirm, civility, story</td>
+<td>everyone, angel, compassion, stakes, whirlwind, directs, rides, affirm, civility, story</td>
 </tr>
 <tr>
 <th>54</th>
 <td>Bush</td>
 <td>2005</td>
-<td>resentment, fire, your, defended, america, americans, excuse, tyranny, freedom, america's</td>
+<td>freedom's, fire, your, defended, america, americans, excuse, tyranny, freedom, america's</td>
 </tr>
 <tr>
 <th>55</th>
@@ -12476,13 +12422,13 @@ Length: 60, dtype: object</pre>
 <th>56</th>
 <td>Obama</td>
 <td>2013</td>
-<td>compel, requires, complete, until, evident, generation's, train, she, creed, journey</td>
+<td>thrives, requires, complete, until, evident, train, generation's, she, creed, journey</td>
 </tr>
 <tr>
 <th>57</th>
 <td>Trump</td>
 <td>2017</td>
-<td>stops, trillions, politicians, shine, everyone, jobs, dreams, obama, we've, america</td>
+<td>transferring, politicians, stops, shine, everyone, jobs, dreams, we've, obama, america</td>
 </tr>
 <tr>
 <th>58</th>
@@ -12541,13 +12487,8 @@ Length: 60, dtype: object</pre>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jupyter-widgets jp-OutputArea-output" id="a469f86c-0bea-4c4c-b0dd-c1a65540c796" tabindex="0">
-<script type="text/javascript">
-var element = document.getElementById('a469f86c-0bea-4c4c-b0dd-c1a65540c796');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "50bc6fbc641f4a9094a857876eb113b1", "version_major": 2, "version_minor": 0}
-</script>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>  0%|          | 0/9364 [00:00&lt;?, ?it/s]</pre>
 </div>
 </div>
 </div>
@@ -12597,10 +12538,10 @@ var element = document.getElementById('a469f86c-0bea-4c4c-b0dd-c1a65540c796');
 <th>and</th>
 <th>to</th>
 <th>...</th>
-<th>predominating</th>
-<th>outbursts</th>
-<th>foreigners</th>
-<th>intimidated</th>
+<th>unpredictable</th>
+<th>admired</th>
+<th>goodwill</th>
+<th>houston</th>
 </tr>
 </thead>
 <tbody>
@@ -12727,205 +12668,205 @@ var element = document.getElementById('a469f86c-0bea-4c4c-b0dd-c1a65540c796');
 <th>0</th>
 <td>Washington</td>
 <td>1789</td>
-<td>predilection, fondest, notification, deliberating, supplication, impregnably, renounce, thence, of, the</td>
+<td>reflections, notification, preeminence, thence, renounce, aver, consulted, untried, of, the</td>
 </tr>
 <tr>
 <th>1</th>
 <td>Washington</td>
 <td>1793</td>
-<td>besides, violated, previous, injunctions, witnesses, knowingly, willingly, incurring, arrive, upbraidings</td>
+<td>besides, injunctions, previous, violated, knowingly, witnesses, willingly, incurring, upbraidings, arrive</td>
 </tr>
 <tr>
 <th>2</th>
 <td>Adams</td>
 <td>1797</td>
-<td>perceived, investigate, to, legislatures, pleasing, amiable, habitual, and, of, the</td>
+<td>sophistry, foreseen, to, legislatures, pleasing, amiable, habitual, and, of, the</td>
 </tr>
 <tr>
 <th>3</th>
 <td>Jefferson</td>
 <td>1801</td>
-<td>embarked, touchstone, agonizing, learnt, traversing, to, and, of, thousandth, the</td>
+<td>visionary, peaceable, unprovided, intentional, delights, to, and, of, thousandth, the</td>
 </tr>
 <tr>
 <th>4</th>
 <td>Jefferson</td>
 <td>1805</td>
-<td>to, whatsoever, and, of, licentiousness, defamation, falsehood, enlighten, covered, the</td>
+<td>to, whatsoever, and, of, licentiousness, defamation, enlighten, falsehood, covered, the</td>
 </tr>
 <tr>
 <th>5</th>
 <td>Madison</td>
 <td>1809</td>
-<td>unexceptionable, unwarrantable, assertions, trespass, indulging, fulfilling, rage, to, of, the</td>
+<td>inexpressibly, inadequacy, belligerent, exempted, manners, suppressing, regulates, to, of, the</td>
 </tr>
 <tr>
 <th>6</th>
 <td>Madison</td>
 <td>1813</td>
-<td>prisoners, recoil, disorganize, awaiting, commanders, emanate, emigrating, of, the, massacre</td>
+<td>captives, extorted, disorganizing, savage, awaiting, insurrectional, hatchet, of, the, massacre</td>
 </tr>
 <tr>
 <th>7</th>
 <td>Monroe</td>
 <td>1817</td>
-<td>our, in, trials, situated, duly, lakes, and, to, of, the</td>
+<td>our, in, trials, duly, situated, lakes, and, to, of, the</td>
 </tr>
 <tr>
 <th>8</th>
 <td>Monroe</td>
 <td>1821</td>
-<td>occurrences, concluded, burthen, recollected, defrayed, in, and, to, of, the</td>
+<td>croix, defrayed, spain, occurrences, concluded, in, and, to, of, the</td>
 </tr>
 <tr>
 <th>9</th>
 <td>Adams</td>
 <td>1825</td>
-<td>revised, composition, assuaged, exploring, in, dissensions, to, and, of, the</td>
+<td>forest, aggravated, prepossessions, bounded, in, dissensions, to, and, of, the</td>
 </tr>
 <tr>
 <th>10</th>
 <td>Jackson</td>
 <td>1829</td>
-<td>profuse, appropriation, impost, confound, transcending, confederate, admonishes, introduction, of, the</td>
+<td>confound, legible, induces, customary, cover, convinces, impenetrable, consist, of, the</td>
 </tr>
 <tr>
 <th>11</th>
 <td>Jackson</td>
 <td>1833</td>
-<td>philanthropist, freeman, lawgivers, inculcate, discountenancing, palladium, preparatory, unavoidably, of, the</td>
+<td>victorious, imbibed, annihilation, lawgivers, deluge, encroaches, impair, link, of, the</td>
 </tr>
 <tr>
 <th>12</th>
 <td>VanBuren</td>
 <td>1837</td>
-<td>our, in, occasionally, evidently, unequaled, foreboding, to, and, of, the</td>
+<td>our, in, occasionally, unequaled, evidently, foreboding, to, and, of, the</td>
 </tr>
 <tr>
 <th>13</th>
 <td>Harrison</td>
 <td>1841</td>
-<td>disputed, observable, checked, and, aristocracy, remark, to, roman, of, the</td>
+<td>monarchy, checked, observable, and, aristocracy, remark, to, roman, of, the</td>
 </tr>
 <tr>
 <th>14</th>
 <td>Polk</td>
 <td>1845</td>
-<td>transfers, consummate, levying, reunion, to, and, compromises, of, texas, the</td>
+<td>consummate, liabilities, reunion, levying, to, and, compromises, of, texas, the</td>
 </tr>
 <tr>
 <th>15</th>
 <td>Taylor</td>
 <td>1849</td>
-<td>loftiest, admonitions, exhaust, appealing, prerequisites, weightiest, defer, to, of, the</td>
+<td>admonitions, bestowal, weightiest, onerous, surrounded, ambassadors, harmonize, to, of, the</td>
 </tr>
 <tr>
 <th>16</th>
 <td>Pierce</td>
 <td>1853</td>
-<td>delusive, speculations, a, hardly, to, preferment, consult, and, of, the</td>
+<td>unobtrusive, replete, a, hardly, to, consult, preferment, and, of, the</td>
 </tr>
 <tr>
 <th>17</th>
 <td>Buchanan</td>
 <td>1857</td>
-<td>hardy, exiles, omen, in, and, to, kansas, squandering, of, the</td>
+<td>inhabitant, residents, remainder, in, and, to, kansas, squandering, of, the</td>
 </tr>
 <tr>
 <th>18</th>
 <td>Lincoln</td>
 <td>1861</td>
-<td>secession, suit, fugitives, to, of, clause, fugitive, dissatisfied, secede, the</td>
+<td>suit, fugitives, frustrated, to, of, clause, fugitive, dissatisfied, secede, the</td>
 </tr>
 <tr>
 <th>19</th>
 <td>Lincoln</td>
 <td>1865</td>
-<td>drop, orphan, malice, ventured, prediction, appearing, rend, engrosses, offenses, woe</td>
+<td>prediction, wills, offense, widow, ventured, orphan, eighth, drop, offenses, woe</td>
 </tr>
 <tr>
 <th>20</th>
 <td>Grant</td>
 <td>1869</td>
-<td>contracting, payable, prostrate, rebuilt, untrammeled, reservation, moment's, feasibility, the, dollar</td>
+<td>stipulated, repudiator, farthing, retrenchment, feasibility, abeyance, contracting, moment's, the, dollar</td>
 </tr>
 <tr>
 <th>21</th>
 <td>Grant</td>
 <td>1873</td>
-<td>producer, guiding, of, the, extermination, steam, telegraph, domingo, transit, santo</td>
+<td>aborigines, proposition, of, the, extermination, telegraph, steam, transit, domingo, santo</td>
 </tr>
 <tr>
 <th>22</th>
 <td>Hayes</td>
 <td>1877</td>
-<td>deplorable, perplexities, noninterference, in, to, and, complications, nomination, of, the</td>
+<td>piety, constraint, september, in, to, and, complications, nomination, of, the</td>
 </tr>
 <tr>
 <th>23</th>
 <td>Garfield</td>
 <td>1881</td>
-<td>ballot, voters, and, smallest, compulsory, negro, notes, incumbents, of, the</td>
+<td>ballot, voters, and, compulsory, negro, smallest, notes, incumbents, of, the</td>
 </tr>
 <tr>
 <th>24</th>
 <td>Cleveland</td>
 <td>1885</td>
-<td>economies, promotes, entitles, unprofitable, accorded, freedmen, supplanted, and, of, the</td>
+<td>workshop, busy, subserviency, supplanted, faculty, freedmen, harmoniously, and, of, the</td>
 </tr>
 <tr>
 <th>25</th>
 <td>Harrison</td>
 <td>1889</td>
-<td>residing, contentions, mill, districts, applicants, to, ballot, and, of, the</td>
+<td>residing, districts, mill, applicants, contentions, to, ballot, and, of, the</td>
 </tr>
 <tr>
 <th>26</th>
 <td>Cleveland</td>
 <td>1893</td>
-<td>deplorably, prodigality, outgrow, purification, to, and, of, aggregations, the, frugality</td>
+<td>kindred, cheapness, wily, misappropriation, to, and, of, aggregations, the, frugality</td>
 </tr>
 <tr>
 <th>27</th>
 <td>McKinley</td>
 <td>1897</td>
-<td>convene, merchant, to, revision, foremost, voted, and, loans, of, the</td>
+<td>convene, merchant, to, voted, foremost, revision, and, loans, of, the</td>
 </tr>
 <tr>
 <th>28</th>
 <td>McKinley</td>
 <td>1901</td>
-<td>plead, constrained, to, islands, and, of, philippine, instructions, the, cuba</td>
+<td>defenders, maketh, to, islands, and, of, philippine, instructions, the, cuba</td>
 </tr>
 <tr>
 <th>29</th>
 <td>Roosevelt</td>
 <td>1905</td>
-<td>bygone, giver, boastfulness, shirk, unbending, intense, hiding, the, regards, aright</td>
+<td>hardier, wither, boastfulness, vainglory, acknowledgment, giver, bygone, the, regards, aright</td>
 </tr>
 <tr>
 <th>30</th>
 <td>Taft</td>
 <td>1909</td>
-<td>incoming, antitrust, to, and, lock, negro, type, of, the, interstate</td>
+<td>philippines, antitrust, to, and, lock, negro, type, of, the, interstate</td>
 </tr>
 <tr>
 <th>31</th>
 <td>Wilson</td>
 <td>1913</td>
-<td>levers, and, of, the, safeguarding, inconceivable, sweep, studied, familiar, stirred</td>
+<td>sanitary, and, of, the, inconceivable, sweep, safeguarding, stirred, familiar, studied</td>
 </tr>
 <tr>
 <th>32</th>
 <td>Wilson</td>
 <td>1917</td>
-<td>transcended, quick, cosmopolitan, composite, irresistibly, sternly, of, and, the, wished</td>
+<td>humors, sternly, audience, provincials, quick, delegation, of, and, the, wished</td>
 </tr>
 <tr>
 <th>33</th>
 <td>Harding</td>
 <td>1921</td>
-<td>crave, spiritually, materially, acclaim, staggering, abnormal, unselfishness, and, of, the</td>
+<td>staggering, acclaim, crave, spiritually, unselfishness, hateful, materially, and, of, the</td>
 </tr>
 <tr>
 <th>34</th>
@@ -12937,151 +12878,151 @@ var element = document.getElementById('a469f86c-0bea-4c4c-b0dd-c1a65540c796');
 <th>35</th>
 <td>Hoover</td>
 <td>1929</td>
-<td>officials, mandates, to, abounding, stimulating, and, liquor, of, the, eighteenth</td>
+<td>mandates, officials, to, stimulating, abounding, and, liquor, of, the, eighteenth</td>
 </tr>
 <tr>
 <th>36</th>
 <td>Roosevelt</td>
 <td>1933</td>
-<td>outgo, detailed, nationalistic, helped, of, critical, languishes, changers, the, stricken</td>
+<td>uneconomical, planning, stubbornness, helped, of, changers, languishes, critical, the, stricken</td>
 </tr>
 <tr>
 <th>37</th>
 <td>Roosevelt</td>
 <td>1937</td>
-<td>bewildered, blindly, paint, of, the, aught, timidity, opportunism, ruthless, epidemics</td>
+<td>stagnation, fashioning, paint, the, of, timidity, ruthless, epidemics, opportunism, aught</td>
 </tr>
 <tr>
 <th>38</th>
 <td>Roosevelt</td>
 <td>1941</td>
-<td>strove, valiantly, towns, prophecy, narrowing, understands, counties, of, speaks, the</td>
+<td>function, decisively, clarity, ebbing, surging, prophecy, downfall, of, speaks, the</td>
 </tr>
 <tr>
 <th>39</th>
 <td>Roosevelt</td>
 <td>1945</td>
-<td>peabody, untroubled, smoothly, downward, anguished, stout, emerson, manger, ostriches, schoolmaster</td>
+<td>untroubled, trend, ostriches, dogs, manger, smoothly, emerson, stout, downward, anguished</td>
 </tr>
 <tr>
 <th>40</th>
 <td>Truman</td>
 <td>1949</td>
-<td>to, of, and, regime, philosophy, major, developments, partners, the, technical</td>
+<td>to, of, and, partners, regime, philosophy, developments, major, the, technical</td>
 </tr>
 <tr>
 <th>41</th>
 <td>Eisenhower</td>
 <td>1953</td>
-<td>in, we, to, and, stamina, precepts, productivity, korea, of, the</td>
+<td>in, we, to, and, stamina, korea, productivity, precepts, of, the</td>
 </tr>
 <tr>
 <th>42</th>
 <td>Eisenhower</td>
 <td>1957</td>
-<td>billion, grinding, bountiful, dams, dynamos, divisive, and, of, the, strives</td>
+<td>tormented, russia, needy, billion, desperation, bartered, and, of, the, strives</td>
 </tr>
 <tr>
 <th>43</th>
 <td>Kennedy</td>
 <td>1961</td>
-<td>belaboring, trumpet, invective, embattled, riding, subversion, outpaced, casting, of, the</td>
+<td>subversion, casting, invective, huts, explore, embattled, communists, overburdened, of, the</td>
 </tr>
 <tr>
 <th>44</th>
 <td>Johnson</td>
 <td>1965</td>
-<td>learns, desert, spilled, and, the, covenant, shoulder, rocket, harvest, mastery</td>
+<td>tower, surroundings, companions, and, the, covenant, harvest, shoulder, rocket, mastery</td>
 </tr>
 <tr>
 <th>45</th>
 <td>Nixon</td>
 <td>1969</td>
-<td>in, we, to, of, riders, worlds, caught, reaches, the, rhetoric</td>
+<td>in, we, to, of, riders, worlds, reaches, caught, the, rhetoric</td>
 </tr>
 <tr>
 <th>46</th>
 <td>Nixon</td>
 <td>1973</td>
-<td>interlude, walls, flimsy, livable, gladly, to, of, the, initiatives, shift</td>
+<td>cook, peking, gladly, flimsy, moscow, to, of, the, initiatives, shift</td>
 </tr>
 <tr>
 <th>47</th>
 <td>Carter</td>
 <td>1977</td>
-<td>magnificently, despise, resurgent, laugh, exemplify, spirituality, milestone, prize, emulation, micah</td>
+<td>o, milestone, emulation, earns, ensured, politically, craving, affirmation, unchanging, micah</td>
 </tr>
 <tr>
 <th>48</th>
 <td>Reagan</td>
 <td>1981</td>
-<td>productivity, weapon, and, monument, markers, row, penalizes, crosses, memorial, the</td>
+<td>weapon, productivity, and, markers, penalizes, memorial, monument, row, crosses, the</td>
 </tr>
 <tr>
 <th>49</th>
 <td>Reagan</td>
 <td>1985</td>
-<td>of, and, wouldn't, started, infirm, echoes, soviets, kill, mathias, the</td>
+<td>of, and, wouldn't, kill, echoes, started, soviets, mathias, infirm, the</td>
 </tr>
 <tr>
 <th>50</th>
 <td>Bush</td>
 <td>1989</td>
-<td>a, engagement, crucial, and, vow, door, the, other's, blowing, breeze</td>
+<td>a, crucial, engagement, and, vow, door, the, other's, blowing, breeze</td>
 </tr>
 <tr>
 <th>51</th>
 <td>Clinton</td>
 <td>1993</td>
-<td>questing, fearsome, eroded, drifting, drifted, robs, plagues, reconnecting, and, the</td>
+<td>broadcast, instantaneously, tobillions, mobile, magical, devastates, myriad, eroded, and, the</td>
 </tr>
 <tr>
 <th>52</th>
 <td>Clinton</td>
 <td>1997</td>
-<td>illnesses, cures, blueprint, decoding, dictatorship, to, our, and, of, the</td>
+<td>repairers, breach, tools, bernardin, explored, to, our, and, of, the</td>
 </tr>
 <tr>
 <th>53</th>
 <td>Bush</td>
 <td>2001</td>
-<td>backgrounds, insignificant, matches, civility, and, story, stakes, rides, whirlwind, directs</td>
+<td>insignificant, scapegoats, angel, civility, and, story, stakes, directs, rides, whirlwind</td>
 </tr>
 <tr>
 <th>54</th>
 <td>Bush</td>
 <td>2005</td>
-<td>jailed, homestead, motivated, unfinished, yourself, youngest, cheney, and, of, the</td>
+<td>wheels, runs, eventual, murder, background, viewpoint, unwanted, and, of, the</td>
 </tr>
 <tr>
 <th>55</th>
 <td>Obama</td>
 <td>2009</td>
-<td>stale, emanates, iraq, we, our, to, of, and, icy, the</td>
+<td>whip, khe, normandy, we, our, to, of, and, icy, the</td>
 </tr>
 <tr>
 <th>56</th>
 <td>Obama</td>
 <td>2013</td>
-<td>unsung, crop, to, of, we, our, and, the, generation's, train</td>
+<td>militias, lucky, to, of, we, our, and, the, generation's, train</td>
 </tr>
 <tr>
 <th>57</th>
 <td>Trump</td>
 <td>2017</td>
-<td>unrealized, the, and, we've, obama, stops, transferring, trillions, shine, politicians</td>
+<td>redistributed, the, and, we've, obama, politicians, stops, shine, transferring, trillions</td>
 </tr>
 <tr>
 <th>58</th>
 <td>Biden</td>
 <td>2021</td>
-<td>pandemic, shoes, versus, disagreement, doesn't, extremism, we're, uniting, virus, let's</td>
+<td>versus, disagreement, extremism, doesn't, pandemic, shoes, we're, uniting, virus, let's</td>
 </tr>
 <tr>
 <th>59</th>
 <td>Trump</td>
 <td>2025</td>
-<td>nobody, drill, autoworkers, enrich, unifier, pushed, the, and, panama, mckinley</td>
+<td>los, angeles, i've, hispanic, nobody, drill, the, and, panama, mckinley</td>
 </tr>
 </tbody>
 </table>
@@ -13367,7 +13308,4 @@ Consider the following corpus:</p>
 </div>
 </main>
 </body>
-<script type="application/vnd.jupyter.widget-state+json">
-{"state": {"0c0a0f2488e84a33804226e48bbce0f8": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets\/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_2328a1116384400591851bfe3bdebaf5", "placeholder": "\u200b", "style": "IPY_MODEL_ff421079f22c44fc801d21fe6d303eb3", "tabbable": null, "tooltip": null, "value": "\u20079364\/9364\u2007[00:33&lt;00:00,\u2007278.58it\/s]"}}, "2328a1116384400591851bfe3bdebaf5": {"model_module": "@jupyter-widgets\/base", "model_module_version": "2.0.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets\/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "23dda35a1cf4475ca07a0e00583aa385": {"model_module": "@jupyter-widgets\/base", "model_module_version": "2.0.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets\/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2456425195e24e07b64c1a0669b41eeb": {"model_module": "@jupyter-widgets\/base", "model_module_version": "2.0.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets\/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2c8bd0218f2648ce82f14e25ca15efbc": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "FloatProgressModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "FloatProgressModel", "_view_count": null, "_view_module": "@jupyter-widgets\/controls", "_view_module_version": "2.0.0", "_view_name": "ProgressView", "bar_style": "success", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_55b6649eb26b4ad690d1ac57e9806833", "max": 9364.0, "min": 0.0, "orientation": "horizontal", "style": "IPY_MODEL_63dcf56d6e3741abbd29720990b09538", "tabbable": null, "tooltip": null, "value": 9364.0}}, "38febf1391c044ffb8dc50b369840c68": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "HBoxModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets\/controls", "_view_module_version": "2.0.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_6d0de56c05db4c7ab7b1feb6be400ee2", "IPY_MODEL_2c8bd0218f2648ce82f14e25ca15efbc", "IPY_MODEL_ed7fbc3584014afab0663b0ae1eb3321"], "layout": "IPY_MODEL_2456425195e24e07b64c1a0669b41eeb", "tabbable": null, "tooltip": null}}, "50bc6fbc641f4a9094a857876eb113b1": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "HBoxModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets\/controls", "_view_module_version": "2.0.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_fc01472394824d938b30ac275a8063d4", "IPY_MODEL_edbbbaf47e63495390c7bdc1685ba82e", "IPY_MODEL_0c0a0f2488e84a33804226e48bbce0f8"], "layout": "IPY_MODEL_51f5ea5b86c844d494ea9344194b9f1f", "tabbable": null, "tooltip": null}}, "51f5ea5b86c844d494ea9344194b9f1f": {"model_module": "@jupyter-widgets\/base", "model_module_version": "2.0.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets\/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "53bf7a1897eb4defa1ad8caa2dfdb9f4": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "ProgressStyleModel", "state": {"_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "ProgressStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "bar_color": null, "description_width": ""}}, "549af267000348fcbcdaa2631ba0c007": {"model_module": "@jupyter-widgets\/base", "model_module_version": "2.0.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets\/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "55b6649eb26b4ad690d1ac57e9806833": {"model_module": "@jupyter-widgets\/base", "model_module_version": "2.0.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets\/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5c1a871bb2734b668a9e5b0dc3417386": {"model_module": "@jupyter-widgets\/base", "model_module_version": "2.0.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets\/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "63dcf56d6e3741abbd29720990b09538": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "ProgressStyleModel", "state": {"_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "ProgressStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "bar_color": null, "description_width": ""}}, "6d0de56c05db4c7ab7b1feb6be400ee2": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets\/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_549af267000348fcbcdaa2631ba0c007", "placeholder": "\u200b", "style": "IPY_MODEL_98bae1a4665c46dc90a4532a2d9a81d1", "tabbable": null, "tooltip": null, "value": "100%"}}, "7963c3fe6e204a42b8341e54aaa4a439": {"model_module": "@jupyter-widgets\/base", "model_module_version": "2.0.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets\/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "98bae1a4665c46dc90a4532a2d9a81d1": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "HTMLStyleModel", "state": {"_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "ae05b3a18d4045a59ff50b32227c82ff": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "HTMLStyleModel", "state": {"_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "e86c6bee8ca6424e91dab70e61db095d": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "HTMLStyleModel", "state": {"_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "ed7fbc3584014afab0663b0ae1eb3321": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets\/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_23dda35a1cf4475ca07a0e00583aa385", "placeholder": "\u200b", "style": "IPY_MODEL_e86c6bee8ca6424e91dab70e61db095d", "tabbable": null, "tooltip": null, "value": "\u20079364\/9364\u2007[00:33&lt;00:00,\u2007274.79it\/s]"}}, "edbbbaf47e63495390c7bdc1685ba82e": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "FloatProgressModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "FloatProgressModel", "_view_count": null, "_view_module": "@jupyter-widgets\/controls", "_view_module_version": "2.0.0", "_view_name": "ProgressView", "bar_style": "success", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_7963c3fe6e204a42b8341e54aaa4a439", "max": 9364.0, "min": 0.0, "orientation": "horizontal", "style": "IPY_MODEL_53bf7a1897eb4defa1ad8caa2dfdb9f4", "tabbable": null, "tooltip": null, "value": 9364.0}}, "fc01472394824d938b30ac275a8063d4": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets\/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_5c1a871bb2734b668a9e5b0dc3417386", "placeholder": "\u200b", "style": "IPY_MODEL_ae05b3a18d4045a59ff50b32227c82ff", "tabbable": null, "tooltip": null, "value": "100%"}}, "ff421079f22c44fc801d21fe6d303eb3": {"model_module": "@jupyter-widgets\/controls", "model_module_version": "2.0.0", "model_name": "HTMLStyleModel", "state": {"_model_module": "@jupyter-widgets\/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets\/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}}, "version_major": 2, "version_minor": 0}
-</script>
 </html>
