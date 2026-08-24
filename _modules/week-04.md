@@ -8,6 +8,7 @@ days:
     type: lecture
     title: Text Features
     reading: '[Ch. 13.4](https://learningds.org/ch/13/text_sotu.html)'
+    html: resources/lectures/lec13/lec13.html
   - name: PROJ 3
     type: proj
     title: Checkpoint - Language Models 🗣
