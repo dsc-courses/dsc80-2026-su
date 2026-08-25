@@ -283,7 +283,7 @@ As mentioned at the top of this page, this project has **two checkpoints**, each
 
 The first checkpoint for this project will be in the form of a 15-minute meeting with a tutor. These meetings will take place on August 27th, 28th, and 29th. Please [schedule your meeting here](https://www.signupgenius.com/go/10C094DACAA2FA3F5C61-65366903-project#/) and use the Zoom link on Canvas called "Project 4 Tutor Check-in Meetings". If working with a partner, schedule one meeting for the both of you to attend together. 
 
-You do **not** need to submit anything for Checkpoint 1 but you will need to do some of Part 1. You will be graded on your answers to the following questions and your ability to explain your plans for your project. At the end of the meeting, the tutor will tell you your grade (out of 20 points). We expect that everyone who can answer all these questions will get full credit.
+You do **not** need to submit anything for Checkpoint 1 but you will need to do some of Part 1 to prepare for your meeting. You will be graded on your answers to the following questions and your ability to explain your plans for your project. At the end of the meeting, the tutor will tell you your grade (out of 20 points). We expect that everyone who can answer these questions will get full credit.
 
 1. (6 points) Which dataset are you working with and why did you choose it? What do you hope to accomplish?
 1. (6 points) Share your screen to show one `plotly` visualization you created in Step 2, and explain what your visualization shows.
