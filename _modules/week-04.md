@@ -20,6 +20,7 @@ days:
     type: lecture
     title: Linear Regression
     reading: '[Ch. 15.0-15.6](https://learningds.org/ch/15/linear_intro.html)'
+    html: resources/lectures/lec14/lec14.html
 - date: '2026-08-26'
   events:
   - name: LEC 15
