@@ -307,7 +307,7 @@ You will ultimately submit your project in two ways. For both submissions, make 
    - To export your notebook as a PDF, first, restart your kernel and run all cells. Then, go to "File > Print Preview". Then, save a print preview of the webpage as a PDF. There are other ways to save a notebook as a PDF but they may require that you have additional packages installed on your computer, so this is likely the most straightforward.
    - It's fine if your `plotly` graphs don't render in the PDF output of your notebook. However, **make sure none of the code is cut off in your notebook's PDF**. **You will lose 5% of the points available on this project if your code is cut off.**
    - This notebook asks you to include a link to your website; make sure to do so.
-2. Submat a **link to your website** to the "Final Project Website Link (All Datasets)" assignment on Gradescope.
+2. Submit a **link to your website** to the "Final Project Website Link (All Datasets)" assignment on Gradescope.
 
 You don't need to submit your actual `.ipynb` file anywhere. **While your website must be public and you should share it with others, you should _not_ make your code for this project available publicly.**
 
