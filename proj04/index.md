@@ -11,7 +11,7 @@ has_toc: false
 
 # 📊 Final Project: The Data Science Lifecycle 
 {:.no_toc}
-### Checkpoint 1 (1%) Due: Friday, August 28th at 11:59PM
+### Checkpoint 1 (1%) [Schedule a check-in](https://www.signupgenius.com/go/10C094DACAA2FA3F5C61-65366903-project#/) between August 27th and 29th
 {:.no_toc}
 ### Checkpoint 2 (1%) Due: Wednesday, September 2nd at 11:59PM
 {:.no_toc}
@@ -279,18 +279,20 @@ The above instructions give you all you need to create and make updates to your 
 {: .green }
 As mentioned at the top of this page, this project has **two checkpoints**, each worth 1% of your overall grade. Each checkpoint is graded out of 20 points.
 
-### Checkpoint 1 Submission
+### Checkpoint 1 Tutor Meeting
 
-The first checkpoint is due on **Friday, August 28th at 11:59PM**. You'll need to complete some steps of Part 1 and answer the following questions directly on Gradescope:
+The first checkpoint for this project will be in the form of a 15-minute meeting with a tutor. These meetings will take place on August 27th, 28th, and 29th. Please [schedule your meeting here](https://www.signupgenius.com/go/10C094DACAA2FA3F5C61-65366903-project#/) and use the Zoom link on Canvas called "Project 4 Tutor Check-in Meetings". If working with a partner, schedule one meeting for the both of you to attend together. 
 
-1. (2 points) Which of the three datasets did you choose? Why?
-1. (6 points) Upload a screenshot of a `plotly` visualization you created in Step 2.
+You do **not** need to submit anything for Checkpoint 1 but you will need to do some of Part 1. You will be graded on your answers to the following questions and your ability to explain your plans for your project. At the end of the meeting, the tutor will tell you your grade (out of 20 points). We expect that everyone who can answer all these questions will get full credit.
+
+1. (6 points) Which dataset are you working with and why did you choose it? What do you hope to accomplish?
+1. (6 points) Share your screen to show one `plotly` visualization you created in Step 2, and explain what your visualization shows.
 1. (6 points) What is the pair of hypotheses you plan on testing in Step 4? What is the test statistic you plan on using?
-1. (6 points) What is the column you plan on trying to predict in Steps 5-8? Is it a classification or regression problem?
+1. (2 points) What is your prediction problem for Steps 5-8? What column will you be predicting and will you use classification or regression?
 
 ### Checkpoint 2 Submission
 
-The second one is due on **Wednesday, September 2nd at 11:59PM**. You'll need to complete more of Part 1 and start on Part 2, then answer the following questions directly on Gradescope:
+The second checkpoint is due on **Wednesday, September 2nd at 11:59PM**. You'll need to complete more of Part 1 and start on Part 2, then answer the following questions directly on Gradescope:
 
 1. (7.5 points) For Step 4, what are your null and alternative hypotheses, and what was the result of your test?
 1. (7.5 points) Briefly explain your baseline model and your plans for improving the model.
