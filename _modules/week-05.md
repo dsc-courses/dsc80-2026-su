@@ -11,6 +11,7 @@ days:
   - name: LAB 9
     type: lab
     title: Models and Pipelines
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/labs/lab09
     reading: ''
 - date: '2026-09-01'
   events:

@@ -49,5 +49,6 @@ days:
   - name: LAB 8
     type: lab
     title: Feature Engineering
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/labs/lab08
     reading: '[Ch. 15.7-15.9](https://learningds.org/ch/15/linear_feature_eng.html)'
 ---
