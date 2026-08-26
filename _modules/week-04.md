@@ -27,6 +27,7 @@ days:
     type: lecture
     title: Feature Engineering
     reading: '[Ch. 15.7-15.9](https://learningds.org/ch/15/linear_feature_eng.html)'
+    html: resources/lectures/lec15/lec15.html
   - name: PROJ 3
     type: proj
     title: Language Models 🗣
