@@ -44,6 +44,7 @@ days:
   - name: PROJ 4
     type: proj
     title: Checkpoint 1 - Data Science Lifecycle 🔁
+    url: https://github.com/dsc-courses/dsc80-2026-su/tree/main/projects/proj04
     reading: ''
 - date: '2026-08-29'
   events:
