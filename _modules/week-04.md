@@ -39,6 +39,7 @@ days:
     type: lecture
     title: Standardization, Multicollinearity, and Generalization
     reading: '[Ch. 16](https://learningds.org/ch/16/ms_train_test.html), [17.6](https://learningds.org/ch/17/inf_pred_gen_prob.html)'
+    html: resources/lectures/lec16/lec16.html
 - date: '2026-08-28'
   events:
   - name: PROJ 4
