@@ -41,6 +41,7 @@ days:
     type: exam
     title: Final Exam
     reading: ''
+    guide: resources/other/final_guide.pdf
 - date: '2026-09-05'
   events:
   - name: PROJ 4
