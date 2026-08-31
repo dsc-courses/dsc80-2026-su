@@ -8,6 +8,7 @@ days:
     type: lecture
     title: Hyperparameters, Cross-Validation, and Decision Trees
     reading: '[Ch. 16](https://learningds.org/ch/16/ms_intro.html)'
+    html: resources/lectures/lec17/lec17.html
   - name: LAB 9
     type: lab
     title: Models and Pipelines
