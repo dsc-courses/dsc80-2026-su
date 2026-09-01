@@ -20,6 +20,7 @@ days:
     type: lecture
     title: Decision Trees and Random Forests
     reading: '[A1](resources/other/15097-decision-trees.pdf)'
+    html: resources/lectures/lec18/lec18.html
 - date: '2026-09-02'
   events:
   - name: LEC 19
