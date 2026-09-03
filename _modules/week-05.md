@@ -38,6 +38,7 @@ days:
     type: lecture
     title: Review, Conclusion
     reading: '[Ch. 19.5](https://learningds.org/ch/19/class_dr.html)'
+    practice: resources/exam_preparation/wi26final.pdf
 - date: '2026-09-04'
   events:
   - name: EXAM
