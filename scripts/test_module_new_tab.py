@@ -8,6 +8,11 @@ MODULE_LAYOUT = Path(__file__).resolve().parent.parent / "_layouts" / "module.ht
 REQUIRED = [
     ("event title", '<a href="{{ event.url }}" target="_blank">{{ event.title }}</a>'),
     ("write button", '<a href="{{ event.html }}" target="_blank">'),
+    ("guide button", '<a href="{{ event.guide }}" target="_blank">'),
+    ("exam button", '<a href="{{ event.exam }}" target="_blank">'),
+    ("practice button", '<a href="{{ event.practice }}" target="_blank">'),
+    ("solutions button", '<a href="{{ event.solutions }}" target="_blank">'),
+    ("notebook button", '<a href="{{ event.notebook }}" target="_blank">'),
 ]
 
 
