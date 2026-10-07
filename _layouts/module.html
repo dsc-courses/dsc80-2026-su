@@ -19,7 +19,7 @@
             <div class="module-event-content">
               <p class="module-event-content--title">
               {% if event.url %}
-                <a href="{{ event.url }}">{{ event.title }}</a>
+                <a href="{{ event.url }}" target="_blank">{{ event.title }}</a>
               {% else %}
                 {{ event.title }}
               {% endif %}
@@ -47,7 +47,7 @@
                 {%- endif -%}
 
                 {%- if event.html -%}
-                <small{% if event.practice_pdf or event.practice_ipynb %} style="margin-right: 8px;"{% endif %}><a href="{{ event.html }}"><button type="button" class="btn btn-info">📝 write</button></a></small>
+                <small{% if event.practice_pdf or event.practice_ipynb %} style="margin-right: 8px;"{% endif %}><a href="{{ event.html }}" target="_blank"><button type="button" class="btn btn-info">📝 write</button></a></small>
                 {%- endif -%}
 
                 {%- if event.exam -%}
